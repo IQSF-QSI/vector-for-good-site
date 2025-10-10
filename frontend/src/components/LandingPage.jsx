@@ -320,6 +320,11 @@ const LandingPage = () => {
               </Card>
             ))}
           </div>
+          {!isLoadingMetrics && qsiMetrics.length === 0 && (
+            <div className="text-center py-8 text-gray-500">
+              No QSI metrics available at the moment.
+            </div>
+          )}
         </div>
       </section>
 
