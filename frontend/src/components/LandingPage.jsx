@@ -403,8 +403,11 @@ const LandingPage = () => {
             </p>
             <div className="footer-nonprofit">
               <Lock className="h-4 w-4" />
-              <span>501(c)(3) Nonprofit Structure</span>
+              <span>Public Benefit Corporation (PBC)</span>
             </div>
+            <p className="footer-description" style={{fontSize: '0.875rem', marginTop: '0.5rem'}}>
+              Powered by IQSF (International Queer Safety Foundation) - 501(c)(3)
+            </p>
           </div>
 
           <div className="footer-section">
