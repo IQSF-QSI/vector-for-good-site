@@ -318,7 +318,8 @@ const LandingPage = () => {
                   <Badge className={`qsi-trend trend-${city.trend}`}>{city.trend}</Badge>
                 </CardContent>
               </Card>
-            ))}
+              ))
+            )}
           </div>
           {!isLoadingMetrics && qsiMetrics.length === 0 && (
             <div className="text-center py-8 text-gray-500">
