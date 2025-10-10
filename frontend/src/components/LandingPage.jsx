@@ -177,7 +177,8 @@ const LandingPage = () => {
             <Badge className="section-badge">Revolutionary Technology</Badge>
             <h2 className="section-title-large">The QI Advantage: Beyond Standard AI</h2>
             <p className="section-subtitle">
-              Discover how Queer Intelligence delivers superior insights through collaborative multi-model deliberation
+              <strong>Queer Intelligence at Quantum Speed and Security.</strong><br />
+              Discover how QI delivers superior insights through collaborative multi-model deliberation—built by queer for queer, better for all.
             </p>
           </div>
 
