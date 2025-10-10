@@ -100,8 +100,8 @@ const LandingPage = () => {
             <span className="gradient-text"> Queer Intelligence</span>
           </h1>
           <p className="hero-subtitle">
-            The first AI platform delivering quantifiable social impact metrics through multi-LLM collaborative intelligence. 
-            Transform ESG reporting from checkbox compliance to competitive advantage.
+            <strong>Queer Intelligence at Quantum Speed and Security.</strong><br />
+            Built by queer for queer, better for all. The first AI platform delivering quantifiable social impact metrics through multi-LLM collaborative intelligence.
           </p>
           <div className="hero-cta">
             <Button size="lg" className="primary-cta">
