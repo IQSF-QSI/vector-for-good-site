@@ -10,6 +10,10 @@ from typing import List
 import uuid
 from datetime import datetime, timezone
 
+# Import route modules
+from routes.demo_requests import get_demo_requests_router
+from routes.qsi_metrics import get_qsi_metrics_router
+
 
 ROOT_DIR = Path(__file__).parent
 load_dotenv(ROOT_DIR / '.env')
