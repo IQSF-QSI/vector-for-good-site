@@ -399,14 +399,14 @@ const LandingPage = () => {
           <div className="footer-section">
             <h4 className="footer-title">Vector for Good</h4>
             <p className="footer-description">
-              Revolutionizing ESG with Queer Intelligence—the first AI platform delivering quantifiable social impact metrics.
+              A Public Benefit Corporation revolutionizing ESG with Queer Intelligence—the first AI platform delivering quantifiable social impact metrics.
             </p>
             <div className="footer-nonprofit">
               <Lock className="h-4 w-4" />
-              <span>Public Benefit Corporation (PBC)</span>
+              <span>Public Benefit Corporation</span>
             </div>
-            <p className="footer-description" style={{fontSize: '0.875rem', marginTop: '0.5rem'}}>
-              Powered by IQSF (International Queer Safety Foundation) - 501(c)(3)
+            <p className="footer-description" style={{fontSize: '0.875rem', marginTop: '0.5rem', color: 'hsl(0, 0%, 70%)'}}>
+              Powered by IQSF (International Queer Safety Foundation) 501(c)(3)
             </p>
           </div>
 
