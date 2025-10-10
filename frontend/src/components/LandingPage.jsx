@@ -290,7 +290,7 @@ const LandingPage = () => {
                 <CardHeader className="qsi-card-header">
                   <div className="qsi-city-info">
                     <Globe className="h-5 w-5" />
-                    <CardTitle className="qsi-city-name">{city.name}</CardTitle>
+                    <CardTitle className="qsi-city-name">{city.cityName || city.name}</CardTitle>
                   </div>
                   <div className={`qsi-score score-${city.rating}`}>{city.score}</div>
                 </CardHeader>
