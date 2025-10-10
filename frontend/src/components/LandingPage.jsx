@@ -453,8 +453,17 @@ const LandingPage = () => {
                     placeholder="Tell us about your ESG goals and challenges..."
                   />
                 </div>
-                <Button type="submit" size="lg" className="submit-btn">
-                  Request Demo <ArrowRight className="ml-2 h-5 w-5" />
+                <Button type="submit" size="lg" className="submit-btn" disabled={isSubmitting}>
+                  {isSubmitting ? (
+                    <>
+                      <Loader2 className="mr-2 h-5 w-5 animate-spin" />
+                      Submitting...
+                    </>
+                  ) : (
+                    <>
+                      Request Demo <ArrowRight className="ml-2 h-5 w-5" />
+                    </>
+                  )}
                 </Button>
               </form>
             </CardContent>
