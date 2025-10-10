@@ -1,10 +1,15 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 import { Button } from './ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './ui/card';
 import { Badge } from './ui/badge';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from './ui/accordion';
-import { ArrowRight, Shield, Globe, Users, TrendingUp, Brain, Zap, CheckCircle, Target, Award, BarChart3, Lock } from 'lucide-react';
+import { ArrowRight, Shield, Globe, Users, TrendingUp, Brain, Zap, CheckCircle, Target, Award, BarChart3, Lock, Loader2 } from 'lucide-react';
+import { toast } from 'sonner';
 import { MOCK_DATA } from '../mock';
+
+const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
+const API = `${BACKEND_URL}/api`;
 
 const LandingPage = () => {
   const [formData, setFormData] = useState({
