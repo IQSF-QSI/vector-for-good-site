@@ -47,6 +47,12 @@ def get_demo_requests_router(db: AsyncIOMotorDatabase):
         """
         try:
             requests = await db.demo_requests.find().sort("createdAt", -1).skip(skip).limit(limit).to_list(limit)
+            
+            # Remove MongoDB _id field
+            for request in requests:
+                if '_id' in request:
+                    del request['_id']
+            
             return requests
         except Exception as e:
             logger.error(f"Error fetching demo requests: {str(e)}")
