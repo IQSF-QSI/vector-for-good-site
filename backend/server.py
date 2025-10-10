@@ -70,6 +70,10 @@ async def get_status_checks():
     
     return status_checks
 
+# Include domain-specific routers
+api_router.include_router(get_demo_requests_router(db), tags=["Demo Requests"])
+api_router.include_router(get_qsi_metrics_router(db), tags=["QSI Metrics"])
+
 # Include the router in the main app
 app.include_router(api_router)
 
