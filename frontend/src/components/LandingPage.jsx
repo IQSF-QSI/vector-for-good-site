@@ -264,8 +264,29 @@ const LandingPage = () => {
           </div>
 
           <div className="qsi-grid">
-            {MOCK_DATA.qsiCities.map((city, index) => (
-              <Card key={index} className="qsi-card">
+            {isLoadingMetrics ? (
+              // Loading skeleton
+              Array(6).fill(0).map((_, index) => (
+                <Card key={index} className="qsi-card">
+                  <CardHeader className="qsi-card-header">
+                    <div className="qsi-city-info">
+                      <Loader2 className="h-5 w-5 animate-spin" />
+                      <div className="h-5 w-32 bg-gray-200 rounded animate-pulse"></div>
+                    </div>
+                    <div className="h-12 w-16 bg-gray-200 rounded animate-pulse"></div>
+                  </CardHeader>
+                  <CardContent>
+                    <div className="space-y-2">
+                      <div className="h-4 bg-gray-200 rounded animate-pulse"></div>
+                      <div className="h-4 bg-gray-200 rounded animate-pulse"></div>
+                      <div className="h-4 bg-gray-200 rounded animate-pulse"></div>
+                    </div>
+                  </CardContent>
+                </Card>
+              ))
+            ) : (
+              qsiMetrics.map((city, index) => (
+                <Card key={index} className="qsi-card">
                 <CardHeader className="qsi-card-header">
                   <div className="qsi-city-info">
                     <Globe className="h-5 w-5" />
