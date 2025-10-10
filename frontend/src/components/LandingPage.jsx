@@ -478,7 +478,10 @@ const LandingPage = () => {
           <div className="footer-section">
             <h4 className="footer-title">Vector for Good</h4>
             <p className="footer-description">
-              A Public Benefit Corporation revolutionizing ESG with Queer Intelligence—the first AI platform delivering quantifiable social impact metrics.
+              Queer Intelligence at Quantum Speed and Security. Built by queer for queer, better for all.
+            </p>
+            <p className="footer-description" style={{marginTop: '0.75rem'}}>
+              A Public Benefit Corporation revolutionizing ESG with the first AI platform delivering quantifiable social impact metrics.
             </p>
             <div className="footer-nonprofit">
               <Lock className="h-4 w-4" />
