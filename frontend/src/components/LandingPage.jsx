@@ -524,7 +524,7 @@ const LandingPage = () => {
         </div>
 
         <div className="footer-bottom">
-          <p>&copy; 2025 Vector for Good. All rights reserved. Built for queer by queer.</p>
+          <p>&copy; 2025 Vector for Good. All rights reserved. Built by queer for queer, better for all.</p>
           <div className="footer-legal">
             <a href="#">Privacy Policy</a>
             <a href="#">Terms of Service</a>
