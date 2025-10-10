@@ -26,7 +26,7 @@ export const MOCK_DATA = {
     {
       icon: <Shield className="h-8 w-8" />,
       title: 'Built By Queer For Queer',
-      description: 'Authentic understanding from lived experience, not algorithmic approximation. 501(c)(3) structure ensures community benefit.'
+      description: 'Authentic understanding from lived experience, not algorithmic approximation. PBC structure ensures community benefit through IQSF (501c3).'
     }
   ],
 
