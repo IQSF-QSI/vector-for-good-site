@@ -18,12 +18,50 @@ const LandingPage = () => {
     company: '',
     message: ''
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [qsiMetrics, setQsiMetrics] = useState([]);
+  const [isLoadingMetrics, setIsLoadingMetrics] = useState(true);
 
-  const handleSubmit = (e) => {
+  // Fetch QSI metrics on component mount
+  useEffect(() => {
+    fetchQSIMetrics();
+  }, []);
+
+  const fetchQSIMetrics = async () => {
+    try {
+      setIsLoadingMetrics(true);
+      const response = await axios.get(`${API}/qsi-metrics`);
+      if (response.data.success) {
+        setQsiMetrics(response.data.data);
+      }
+    } catch (error) {
+      console.error('Error fetching QSI metrics:', error);
+      toast.error('Failed to load QSI metrics. Using cached data.');
+      // Fallback to mock data
+      setQsiMetrics(MOCK_DATA.qsiCities);
+    } finally {
+      setIsLoadingMetrics(false);
+    }
+  };
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log('Demo request submitted:', formData);
-    alert('Thank you! We\'ll contact you within 24 hours to schedule your enterprise demo.');
-    setFormData({ name: '', email: '', company: '', message: '' });
+    setIsSubmitting(true);
+
+    try {
+      const response = await axios.post(`${API}/demo-requests`, formData);
+      
+      if (response.data.success) {
+        toast.success(response.data.message);
+        setFormData({ name: '', email: '', company: '', message: '' });
+      }
+    } catch (error) {
+      console.error('Error submitting demo request:', error);
+      const errorMessage = error.response?.data?.detail || 'Failed to submit demo request. Please try again.';
+      toast.error(errorMessage);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (e) => {
