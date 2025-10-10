@@ -1,3 +1,4 @@
+import React from 'react';
 import { Shield, Globe, Users, Brain, Zap, Target, TrendingUp, Award } from 'lucide-react';
 
 export const MOCK_DATA = {
