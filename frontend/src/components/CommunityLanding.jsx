@@ -543,4 +543,4 @@ const CommunityLanding = () => {
   );
 };
 
-export default LandingPage;
+export default CommunityLanding;
