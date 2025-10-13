@@ -527,9 +527,9 @@ const LandingPage = () => {
         <div className="footer-bottom">
           <p>&copy; 2025 Vector for Good. All rights reserved. Built by queer for queer, better for all.</p>
           <div className="footer-legal">
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms of Service</a>
-            <a href="#">Data Protection</a>
+            <a href="mailto:levi@vectorforgood.com">Contact Us</a>
+            <a href="https://vectorforgood.com" target="_blank" rel="noopener noreferrer">vectorforgood.com</a>
+            <a href="#contact" onClick={(e) => { e.preventDefault(); document.getElementById('contact').scrollIntoView({ behavior: 'smooth' }); }}>Request Demo</a>
           </div>
         </div>
       </footer>
