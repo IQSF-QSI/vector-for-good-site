@@ -1,0 +1,111 @@
+/* Enterprise Landing Page Specific Styles */
+
+.trust-section {
+  background: linear-gradient(135deg, rgba(249, 115, 22, 0.03) 0%, rgba(236, 72, 153, 0.03) 100%);
+  padding: 2rem 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.trust-label {
+  text-align: center;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: hsl(240, 5%, 35%);
+}
+
+/* ROI Section */
+.roi-section {
+  padding: 6rem 0;
+  background: white;
+}
+
+.roi-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.roi-card {
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  background: white;
+}
+
+.roi-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+.roi-card svg {
+  margin: 0 auto 1rem;
+}
+
+.roi-value {
+  font-size: 3.5rem;
+  font-weight: 900;
+  font-family: 'Space Grotesk', sans-serif;
+  background: linear-gradient(135deg, #f97316 0%, #ec4899 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 1rem 0;
+}
+
+.roi-description {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: hsl(240, 5%, 40%);
+  margin-top: 1rem;
+}
+
+/* Security Section */
+.security-section {
+  padding: 6rem 0;
+  background: linear-gradient(180deg, rgba(249, 115, 22, 0.02) 0%, rgba(236, 72, 153, 0.02) 100%);
+}
+
+.security-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.security-card {
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: white;
+}
+
+.security-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.security-card svg {
+  color: #f97316;
+  margin-bottom: 1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .roi-grid,
+  .security-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .roi-value {
+    font-size: 2.5rem;
+  }
+  
+  .trust-label {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+}
