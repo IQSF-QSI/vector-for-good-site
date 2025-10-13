@@ -496,30 +496,30 @@ const LandingPage = () => {
           <div className="footer-section">
             <h4 className="footer-title">Solutions</h4>
             <ul className="footer-links">
-              <li><a href="#">Global Workforce Safety</a></li>
-              <li><a href="#">ESG Reporting</a></li>
-              <li><a href="#">Brand Safety</a></li>
-              <li><a href="#">Talent Acquisition</a></li>
+              <li><a href="#solutions" onClick={(e) => { e.preventDefault(); document.getElementById('solutions').scrollIntoView({ behavior: 'smooth' }); }}>Global Workforce Safety</a></li>
+              <li><a href="#solutions" onClick={(e) => { e.preventDefault(); document.getElementById('solutions').scrollIntoView({ behavior: 'smooth' }); }}>ESG Reporting</a></li>
+              <li><a href="#solutions" onClick={(e) => { e.preventDefault(); document.getElementById('solutions').scrollIntoView({ behavior: 'smooth' }); }}>Brand Safety</a></li>
+              <li><a href="#solutions" onClick={(e) => { e.preventDefault(); document.getElementById('solutions').scrollIntoView({ behavior: 'smooth' }); }}>Talent Acquisition</a></li>
             </ul>
           </div>
 
           <div className="footer-section">
             <h4 className="footer-title">Technology</h4>
             <ul className="footer-links">
-              <li><a href="#">Queer Intelligence</a></li>
-              <li><a href="#">Global QSI</a></li>
-              <li><a href="#">Multi-LLM Platform</a></li>
-              <li><a href="#">API Access</a></li>
+              <li><a href="#technology" onClick={(e) => { e.preventDefault(); document.getElementById('technology').scrollIntoView({ behavior: 'smooth' }); }}>Queer Intelligence</a></li>
+              <li><a href="#qsi-metrics" onClick={(e) => { e.preventDefault(); document.getElementById('qsi-metrics').scrollIntoView({ behavior: 'smooth' }); }}>Global QSI</a></li>
+              <li><a href="#technology" onClick={(e) => { e.preventDefault(); document.getElementById('technology').scrollIntoView({ behavior: 'smooth' }); }}>Multi-LLM Platform</a></li>
+              <li><a href="#contact" onClick={(e) => { e.preventDefault(); document.getElementById('contact').scrollIntoView({ behavior: 'smooth' }); }}>API Access</a></li>
             </ul>
           </div>
 
           <div className="footer-section">
             <h4 className="footer-title">Company</h4>
             <ul className="footer-links">
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Impact Report</a></li>
-              <li><a href="#">Careers</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="https://vectorforgood.com" target="_blank" rel="noopener noreferrer">About Us</a></li>
+              <li><a href="#impact" onClick={(e) => { e.preventDefault(); document.getElementById('impact').scrollIntoView({ behavior: 'smooth' }); }}>Impact Report</a></li>
+              <li><a href="mailto:levi@vectorforgood.com">Careers</a></li>
+              <li><a href="#contact" onClick={(e) => { e.preventDefault(); document.getElementById('contact').scrollIntoView({ behavior: 'smooth' }); }}>Contact</a></li>
             </ul>
           </div>
         </div>
