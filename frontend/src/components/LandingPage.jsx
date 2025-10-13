@@ -82,11 +82,11 @@ const LandingPage = () => {
             <span className="logo-text">Vector for Good</span>
           </div>
           <nav className="nav-menu">
-            <a href="#solutions" className="nav-link">Solutions</a>
-            <a href="#technology" className="nav-link">Technology</a>
-            <a href="#impact" className="nav-link">Impact</a>
-            <a href="#contact" className="nav-link">Contact</a>
-            <Button className="demo-btn-header">Request Demo</Button>
+            <a href="#solutions" className="nav-link" onClick={(e) => { e.preventDefault(); document.getElementById('solutions').scrollIntoView({ behavior: 'smooth' }); }}>Solutions</a>
+            <a href="#technology" className="nav-link" onClick={(e) => { e.preventDefault(); document.getElementById('technology').scrollIntoView({ behavior: 'smooth' }); }}>Technology</a>
+            <a href="#impact" className="nav-link" onClick={(e) => { e.preventDefault(); document.getElementById('impact').scrollIntoView({ behavior: 'smooth' }); }}>Impact</a>
+            <a href="#contact" className="nav-link" onClick={(e) => { e.preventDefault(); document.getElementById('contact').scrollIntoView({ behavior: 'smooth' }); }}>Contact</a>
+            <Button className="demo-btn-header" onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}>Request Demo</Button>
           </nav>
         </div>
       </header>
