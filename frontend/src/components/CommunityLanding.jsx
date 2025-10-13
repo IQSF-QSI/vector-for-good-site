@@ -11,7 +11,7 @@ import { MOCK_DATA } from '../mock';
 const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
 const API = `${BACKEND_URL}/api`;
 
-const LandingPage = () => {
+const CommunityLanding = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
