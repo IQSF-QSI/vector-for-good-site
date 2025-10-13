@@ -254,7 +254,7 @@ const LandingPage = () => {
       </section>
 
       {/* Global QSI Metrics */}
-      <section className="qsi-metrics-section">
+      <section className="qsi-metrics-section" id="qsi-metrics">
         <div className="section-container">
           <div className="section-header-center">
             <Badge className="section-badge">Live Intelligence</Badge>
