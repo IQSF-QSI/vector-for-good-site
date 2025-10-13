@@ -395,6 +395,16 @@ const LandingPage = () => {
               Join Fortune 50 leaders who are unlocking the full potential of the "S" in ESG with Queer Intelligence.
               Schedule your personalized demo today.
             </p>
+            <div style={{marginTop: '2rem', display: 'flex', flexDirection: 'column', gap: '1rem'}}>
+              <div style={{display: 'flex', alignItems: 'center', gap: '0.75rem', fontSize: '1.125rem'}}>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                <a href="mailto:levi@vectorforgood.com" style={{color: 'inherit', textDecoration: 'none', fontWeight: '600'}}>levi@vectorforgood.com</a>
+              </div>
+              <div style={{display: 'flex', alignItems: 'center', gap: '0.75rem', fontSize: '1.125rem'}}>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+                <a href="https://vectorforgood.com" target="_blank" rel="noopener noreferrer" style={{color: 'inherit', textDecoration: 'none', fontWeight: '600'}}>vectorforgood.com</a>
+              </div>
+            </div>
           </div>
 
           <Card className="demo-form-card">
