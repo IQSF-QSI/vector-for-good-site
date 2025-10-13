@@ -83,6 +83,7 @@ const CommunityLanding = () => {
             <span className="logo-text">Vector for Good</span>
           </div>
           <nav className="nav-menu">
+            <Link to="/" className="nav-link">Enterprise</Link>
             <a href="#solutions" className="nav-link" onClick={(e) => { e.preventDefault(); document.getElementById('solutions').scrollIntoView({ behavior: 'smooth' }); }}>Solutions</a>
             <a href="#technology" className="nav-link" onClick={(e) => { e.preventDefault(); document.getElementById('technology').scrollIntoView({ behavior: 'smooth' }); }}>Technology</a>
             <a href="#impact" className="nav-link" onClick={(e) => { e.preventDefault(); document.getElementById('impact').scrollIntoView({ behavior: 'smooth' }); }}>Impact</a>
