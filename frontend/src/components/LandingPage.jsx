@@ -104,10 +104,10 @@ const LandingPage = () => {
             Built by queer for queer, better for all. The first AI platform delivering quantifiable social impact metrics through multi-LLM collaborative intelligence.
           </p>
           <div className="hero-cta">
-            <Button size="lg" className="primary-cta">
+            <Button size="lg" className="primary-cta" onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}>
               Request Enterprise Demo <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
-            <Button size="lg" variant="outline" className="secondary-cta">
+            <Button size="lg" variant="outline" className="secondary-cta" onClick={() => document.getElementById('qsi-metrics').scrollIntoView({ behavior: 'smooth' })}>
               View QSI Metrics
             </Button>
           </div>
