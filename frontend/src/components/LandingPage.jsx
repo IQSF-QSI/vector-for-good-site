@@ -94,14 +94,14 @@ const LandingPage = () => {
       {/* Hero Section */}
       <section className="hero-section">
         <div className="hero-content">
-          <Badge className="hero-badge">Revolutionizing ESG Intelligence</Badge>
+          <Badge className="hero-badge">Empowering Organizations Worldwide</Badge>
           <h1 className="hero-title">
-            Unlock the "S" in ESG with
-            <span className="gradient-text"> Queer Intelligence</span>
+            Deliver Safer, More Inclusive Experiences for
+            <span className="gradient-text"> LGBTQ+ People Worldwide</span>
           </h1>
           <p className="hero-subtitle">
             <strong>Queer Intelligence at Quantum Speed and Security.</strong><br />
-            Built by queer for queer, better for all. The first AI platform delivering quantifiable social impact metrics through multi-LLM collaborative intelligence.
+            Built by queer for queer, better for all. Leveraging real-time safety analytics, privacy-preserving data, and AI-powered insights to transform ESG reporting from compliance to competitive advantage.
           </p>
           <div className="hero-cta">
             <Button size="lg" className="primary-cta" onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}>
