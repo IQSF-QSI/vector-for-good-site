@@ -152,17 +152,15 @@ const LandingPage = () => {
             <div className="icon-wrapper solution-icon">
               <Brain className="h-8 w-8" />
             </div>
-            <h2 className="section-title">The QI Solution</h2>
+            <h2 className="section-title">Queer Intelligence (QI)</h2>
             <p className="section-description">
-              Queer Intelligence isn't just another AI model—it's a paradigm shift. Our hidden relay system 
-              orchestrates 4 specialized LLMs (GPT-4, Gemini, Hermes, Mistral) in collaborative deliberation, 
-              mimicking diverse team intelligence rather than singular AI reasoning.
+              The only platform combining real-time geo-contextual safety, privacy-preserving data, and intersectional insights for LGBTQ+ communities. We co-create solutions with advocacy groups to ensure authenticity and trust.
             </p>
             <ul className="solution-list">
-              <li><CheckCircle className="h-5 w-5 text-emerald-500" /> Real-time Global Queer Safety Index (QSI)</li>
-              <li><CheckCircle className="h-5 w-5 text-emerald-500" /> Quantifiable "S" metrics for ESG reporting</li>
-              <li><CheckCircle className="h-5 w-5 text-emerald-500" /> Multi-LLM collaborative intelligence</li>
-              <li><CheckCircle className="h-5 w-5 text-emerald-500" /> Built by queer for queer authenticity</li>
+              <li><CheckCircle className="h-5 w-5 text-emerald-500" /> <strong>Real-time Safety Analytics</strong> - Geo-contextual risk assessment</li>
+              <li><CheckCircle className="h-5 w-5 text-emerald-500" /> <strong>Privacy-Preserving Data</strong> - Ethical, consent-based approach</li>
+              <li><CheckCircle className="h-5 w-5 text-emerald-500" /> <strong>AI-Powered Insights</strong> - Multi-LLM collaborative intelligence</li>
+              <li><CheckCircle className="h-5 w-5 text-emerald-500" /> <strong>Intersectional Analysis</strong> - Gender, race, sexuality, ability</li>
             </ul>
           </div>
         </div>
