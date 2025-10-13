@@ -136,17 +136,15 @@ const LandingPage = () => {
             <div className="icon-wrapper problem-icon">
               <Target className="h-8 w-8" />
             </div>
-            <h2 className="section-title">The ESG Challenge</h2>
+            <h2 className="section-title">The Critical Problem</h2>
             <p className="section-description">
-              While Environmental and Governance metrics have clear frameworks, the "Social" component remains 
-              the most difficult to quantify, measure, and report. Standard AI approaches miss cultural nuance, 
-              intersectionality, and authentic inclusion signals.
+              LGBTQ+ individuals face tangible risks in public and professional spaces that organizations often cannot see or address effectively.
             </p>
             <ul className="challenge-list">
-              <li><CheckCircle className="h-5 w-5 text-red-500" /> No standardized social impact metrics</li>
-              <li><CheckCircle className="h-5 w-5 text-red-500" /> "Rainbow washing" vs. genuine inclusion</li>
-              <li><CheckCircle className="h-5 w-5 text-red-500" /> Hidden workforce safety risks</li>
-              <li><CheckCircle className="h-5 w-5 text-red-500" /> Insufficient investor transparency</li>
+              <li><CheckCircle className="h-5 w-5 text-red-500" /> <strong>71%</strong> of LGBTQ+ adults avoid public spaces out of fear</li>
+              <li><CheckCircle className="h-5 w-5 text-red-500" /> <strong>4th consecutive year</strong> of rising hate crimes</li>
+              <li><CheckCircle className="h-5 w-5 text-red-500" /> Current ESG/DEI solutions have major blind spots</li>
+              <li><CheckCircle className="h-5 w-5 text-red-500" /> Lack intersectional, geo-contextual safety data</li>
             </ul>
           </div>
 
