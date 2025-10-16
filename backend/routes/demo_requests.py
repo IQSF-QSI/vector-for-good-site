@@ -1,14 +1,14 @@
 from fastapi import APIRouter, HTTPException, status
-from motor.motor_asyncio import AsyncIOMotorDatabase
+from supabase import Client
 from models import DemoRequestCreate, DemoRequest, DemoRequestResponse, ErrorResponse
 import logging
 
 logger = logging.getLogger(__name__)
+
 router = APIRouter()
 
-
-def get_demo_requests_router(db: AsyncIOMotorDatabase):
-    @router.post("/demo-requests", response_model=DemoRequestResponse, status_code=status.HTTP_201_CREATED)
+def get_demo_requests_router(supabase: Client):
+    @router.post("/", response_model=DemoRequestResponse, status_code=status.HTTP_201_CREATED)
     async def create_demo_request(request_data: DemoRequestCreate):
         """
         Create a new demo request from the landing page form.
@@ -22,8 +22,17 @@ def get_demo_requests_router(db: AsyncIOMotorDatabase):
                 message=request_data.message
             )
             
-            # Insert into database
-            result = await db.demo_requests.insert_one(demo_request.dict())
+            # Insert into Supabase
+            result = supabase.table('demo_requests').insert({
+                'id': demo_request.id,
+                'name': demo_request.name,
+                'email': demo_request.email,
+                'company': demo_request.company,
+                'message': demo_request.message,
+                'status': demo_request.status,
+                'created_at': demo_request.createdAt.isoformat(),
+                'updated_at': demo_request.updatedAt.isoformat()
+            }).execute()
             
             logger.info(f"Demo request created: {demo_request.id} for {demo_request.email}")
             
@@ -39,26 +48,26 @@ def get_demo_requests_router(db: AsyncIOMotorDatabase):
                 status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
                 detail="Failed to submit demo request. Please try again."
             )
-
-    @router.get("/demo-requests", response_model=list)
+    
+    @router.get("/", response_model=list)
     async def get_demo_requests(limit: int = 100, skip: int = 0):
         """
         Get all demo requests (for admin use).
         """
         try:
-            requests = await db.demo_requests.find().sort("createdAt", -1).skip(skip).limit(limit).to_list(limit)
+            # Fetch from Supabase with pagination
+            response = supabase.table('demo_requests') \
+                .select("*") \
+                .order('created_at', desc=True) \
+                .range(skip, skip + limit - 1) \
+                .execute()
             
-            # Remove MongoDB _id field
-            for request in requests:
-                if '_id' in request:
-                    del request['_id']
-            
-            return requests
+            return response.data
         except Exception as e:
             logger.error(f"Error fetching demo requests: {str(e)}")
             raise HTTPException(
                 status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
                 detail="Failed to fetch demo requests"
             )
-
+    
     return router
