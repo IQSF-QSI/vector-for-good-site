@@ -110,9 +110,11 @@ const CommunityLanding = () => {
             <Button size="lg" className="primary-cta" onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}>
               Request Enterprise Demo <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
-            <Button size="lg" variant="outline" className="secondary-cta" onClick={() => document.getElementById('qsi-metrics').scrollIntoView({ behavior: 'smooth' })}>
-              View QSI Metrics
-            </Button>
+            <Link to="/demo">
+              <Button size="lg" variant="outline" className="secondary-cta">
+                Try Live QSI Demo
+              </Button>
+            </Link>
           </div>
           <div className="hero-stats">
             {MOCK_DATA.heroStats.map((stat, index) => (
