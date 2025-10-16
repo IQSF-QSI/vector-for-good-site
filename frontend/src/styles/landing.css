@@ -37,23 +37,14 @@
 
 .logo-img {
   height: 48px;
-  width: 48px;
+  width: auto;
+  max-width: 200px;
   object-fit: contain;
   transition: transform 0.3s ease;
 }
 
 .logo-img:hover {
   transform: scale(1.05);
-}
-
-.logo-text {
-  font-size: 1.5rem;
-  font-weight: 700;
-  font-family: 'Space Grotesk', sans-serif;
-  background: linear-gradient(135deg, #f97316 0%, #ec4899 50%, #8b5cf6 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 .nav-menu {
