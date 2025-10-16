@@ -73,11 +73,10 @@ const EnterpriseLanding = () => {
         <div className="header-content">
           <div className="logo-section">
             <img 
-              src="https://customer-assets.emergentagent.com/job_46189f81-3b3a-4aa4-aac3-2ab4e4427fc1/artifacts/428w8e7e_queer-inteligence-qi.png" 
+              src="https://customer-assets.emergentagent.com/job_46189f81-3b3a-4aa4-aac3-2ab4e4427fc1/artifacts/e5ypx4zy_EEF96F90-7D62-411E-92B2-8B4BF5630EF7.PNG" 
               alt="Vector for Good Logo" 
               className="logo-img"
             />
-            <span className="logo-text">Vector for Good</span>
           </div>
           <nav className="nav-menu">
             <a href="#solutions" className="nav-link" onClick={(e) => { e.preventDefault(); document.getElementById('solutions').scrollIntoView({ behavior: 'smooth' }); }}>Solutions</a>
