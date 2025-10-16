@@ -133,6 +133,22 @@ const CommunityLanding = () => {
         </div>
       </section>
 
+      {/* Trust Bar */}
+      <section className="trust-section">
+        <div className="section-container">
+          <div className="trust-content">
+            <p className="trust-label">Powered by NVIDIA Inception Program. Built by queer for queer, better for all.</p>
+            <div className="trust-badge">
+              <img 
+                src="https://customer-assets.emergentagent.com/job_46189f81-3b3a-4aa4-aac3-2ab4e4427fc1/artifacts/q42s839g_nvidia-inception-program-badge-rgb-1c-blk-for-screen.svg" 
+                alt="NVIDIA Inception Program" 
+                className="nvidia-badge"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Problem/Solution Section */}
       <section className="problem-solution-section">
         <div className="section-container">
