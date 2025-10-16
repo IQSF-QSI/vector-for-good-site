@@ -6,6 +6,7 @@ import { Badge } from './ui/badge';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from './ui/accordion';
 import { ArrowRight, Shield, Globe, Users, TrendingUp, Brain, Zap, CheckCircle, Target, Award, BarChart3, Lock, Loader2 } from 'lucide-react';
 import { toast } from 'sonner';
+import { Link } from 'react-router-dom';
 import { MOCK_DATA } from '../mock';
 
 const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
