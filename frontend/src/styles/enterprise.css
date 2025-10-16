@@ -45,15 +45,15 @@
 .roi-section::before {
   content: '';
   position: absolute;
-  top: -100px;
-  left: -150px;
-  width: 700px;
-  height: 700px;
-  background-image: url('https://customer-assets.emergentagent.com/job_46189f81-3b3a-4aa4-aac3-2ab4e4427fc1/artifacts/4qkjszdv_queer-inteligence-qi.png');
+  top: -150px;
+  left: -200px;
+  width: 950px;
+  height: 950px;
+  background-image: url('https://customer-assets.emergentagent.com/job_46189f81-3b3a-4aa4-aac3-2ab4e4427fc1/artifacts/1xscenxt_queer-inteligence-qi.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  opacity: 0.02;
+  opacity: 0.11;
   z-index: 0;
   pointer-events: none;
 }
