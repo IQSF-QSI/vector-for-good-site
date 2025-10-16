@@ -508,9 +508,9 @@ const EnterpriseLanding = () => {
         <div className="footer-bottom">
           <p>&copy; 2025 Vector for Good. All rights reserved. Built by the community, trusted by enterprises.</p>
           <div className="footer-legal">
-            <a href="mailto:levi@vectorforgood.com">Contact Us</a>
-            <a href="https://vectorforgood.com" target="_blank" rel="noopener noreferrer">vectorforgood.com</a>
-            <Link to="/community">Community Impact</Link>
+            <a href="mailto:levi@vectorforgood.com">levi@vectorforgood.com</a>
+            <Link to="/demo">Try Live Demo</Link>
+            <Link to="/community">Our Story</Link>
           </div>
         </div>
       </footer>
