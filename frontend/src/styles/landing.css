@@ -873,6 +873,25 @@
   padding: 6rem 0;
   background: linear-gradient(135deg, rgba(249, 115, 22, 0.05) 0%, rgba(236, 72, 153, 0.05) 100%);
   margin: 4rem 0 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-section::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 900px;
+  height: 900px;
+  background-image: url('https://customer-assets.emergentagent.com/job_46189f81-3b3a-4aa4-aac3-2ab4e4427fc1/artifacts/4qkjszdv_queer-inteligence-qi.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.015;
+  z-index: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
 }
 
 .cta-container {
