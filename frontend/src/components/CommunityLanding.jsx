@@ -549,10 +549,10 @@ const CommunityLanding = () => {
           <div className="footer-section">
             <h4 className="footer-title">Company</h4>
             <ul className="footer-links">
-              <li><a href="https://vectorforgood.com" target="_blank" rel="noopener noreferrer">About Us</a></li>
+              <li><Link to="/">Enterprise Solutions</Link></li>
+              <li><Link to="/demo">Live QSI Demo</Link></li>
               <li><a href="#impact" onClick={(e) => { e.preventDefault(); document.getElementById('impact').scrollIntoView({ behavior: 'smooth' }); }}>Impact Report</a></li>
-              <li><a href="mailto:levi@vectorforgood.com">Careers</a></li>
-              <li><a href="#contact" onClick={(e) => { e.preventDefault(); document.getElementById('contact').scrollIntoView({ behavior: 'smooth' }); }}>Contact</a></li>
+              <li><a href="mailto:levi@vectorforgood.com">Contact & Careers</a></li>
             </ul>
           </div>
         </div>
