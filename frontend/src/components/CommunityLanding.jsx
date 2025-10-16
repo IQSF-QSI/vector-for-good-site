@@ -560,9 +560,9 @@ const CommunityLanding = () => {
         <div className="footer-bottom">
           <p>&copy; 2025 Vector for Good. All rights reserved. Built by queer for queer, better for all.</p>
           <div className="footer-legal">
-            <a href="mailto:levi@vectorforgood.com">Contact Us</a>
-            <a href="https://vectorforgood.com" target="_blank" rel="noopener noreferrer">vectorforgood.com</a>
-            <a href="#contact" onClick={(e) => { e.preventDefault(); document.getElementById('contact').scrollIntoView({ behavior: 'smooth' }); }}>Request Demo</a>
+            <a href="mailto:levi@vectorforgood.com">levi@vectorforgood.com</a>
+            <Link to="/demo">Try Live Demo</Link>
+            <Link to="/">Enterprise</Link>
           </div>
         </div>
       </footer>
