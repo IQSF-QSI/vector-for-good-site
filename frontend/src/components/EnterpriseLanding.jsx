@@ -465,6 +465,13 @@ const EnterpriseLanding = () => {
               <span>Public Benefit Corporation</span>
             </div>
             <p className="footer-description" style={{marginTop: '0.75rem', color: 'hsl(0, 0%, 70%)'}}>Powered by IQSF (International Queer Safety Foundation) 501(c)(3)</p>
+            <div style={{marginTop: '1.5rem'}}>
+              <img 
+                src="https://customer-assets.emergentagent.com/job_46189f81-3b3a-4aa4-aac3-2ab4e4427fc1/artifacts/q42s839g_nvidia-inception-program-badge-rgb-1c-blk-for-screen.svg" 
+                alt="NVIDIA Inception Program" 
+                style={{height: '40px', width: 'auto', filter: 'brightness(0) invert(1)'}}
+              />
+            </div>
           </div>
 
           <div className="footer-section">
