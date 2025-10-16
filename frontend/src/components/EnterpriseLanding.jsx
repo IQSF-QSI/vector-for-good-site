@@ -142,7 +142,7 @@ const EnterpriseLanding = () => {
             <p className="trust-label">Built by LGBTQ+ technologists. Trusted by advocacy groups. Validated by Fortune 50 enterprises.</p>
             <div className="trust-badge">
               <img 
-                src="https://customer-assets.emergentagent.com/job_46189f81-3b3a-4aa4-aac3-2ab4e4427fc1/artifacts/q42s839g_nvidia-inception-program-badge-rgb-1c-blk-for-screen.svg" 
+                src="https://customer-assets.emergentagent.com/job_46189f81-3b3a-4aa4-aac3-2ab4e4427fc1/artifacts/zsjo26yt_nvidia-inception-program-badge-rgb-for-screen.png" 
                 alt="NVIDIA Inception Program" 
                 className="nvidia-badge"
               />
