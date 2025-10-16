@@ -48,7 +48,8 @@
 
 .logo-img-small {
   height: 36px;
-  width: 36px;
+  width: auto;
+  max-width: 150px;
   object-fit: contain;
 }
 
