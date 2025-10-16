@@ -106,9 +106,11 @@ const EnterpriseLanding = () => {
             <Button size="lg" className="primary-cta" onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}>
               Schedule Enterprise Demo <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
-            <Button size="lg" variant="outline" className="secondary-cta" onClick={() => document.getElementById('roi').scrollIntoView({ behavior: 'smooth' })}>
-              Calculate Your ROI
-            </Button>
+            <Link to="/demo">
+              <Button size="lg" variant="outline" className="secondary-cta">
+                Try Live QSI Demo
+              </Button>
+            </Link>
           </div>
           <div className="hero-stats">
             <div className="stat-item">
