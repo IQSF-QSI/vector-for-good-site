@@ -7,11 +7,31 @@
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 
+.trust-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
 .trust-label {
   text-align: center;
   font-size: 1.125rem;
   font-weight: 600;
   color: hsl(240, 5%, 35%);
+}
+
+.trust-badge {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nvidia-badge {
+  height: 48px;
+  width: auto;
+  object-fit: contain;
 }
 
 /* ROI Section */
