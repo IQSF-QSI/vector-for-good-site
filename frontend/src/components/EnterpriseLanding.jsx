@@ -138,7 +138,16 @@ const EnterpriseLanding = () => {
       {/* Trust Bar */}
       <section className="trust-section">
         <div className="section-container">
-          <p className="trust-label">Built by LGBTQ+ technologists. Trusted by advocacy groups. Validated by Fortune 50 enterprises.</p>
+          <div className="trust-content">
+            <p className="trust-label">Built by LGBTQ+ technologists. Trusted by advocacy groups. Validated by Fortune 50 enterprises.</p>
+            <div className="trust-badge">
+              <img 
+                src="https://customer-assets.emergentagent.com/job_46189f81-3b3a-4aa4-aac3-2ab4e4427fc1/artifacts/q42s839g_nvidia-inception-program-badge-rgb-1c-blk-for-screen.svg" 
+                alt="NVIDIA Inception Program" 
+                className="nvidia-badge"
+              />
+            </div>
+          </div>
         </div>
       </section>
 
