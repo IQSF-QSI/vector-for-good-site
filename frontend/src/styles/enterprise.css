@@ -105,6 +105,25 @@
 .security-section {
   padding: 6rem 0;
   background: linear-gradient(180deg, rgba(249, 115, 22, 0.02) 0%, rgba(236, 72, 153, 0.02) 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.security-section::after {
+  content: '';
+  position: absolute;
+  bottom: -150px;
+  right: -200px;
+  width: 900px;
+  height: 900px;
+  background-image: url('https://customer-assets.emergentagent.com/job_46189f81-3b3a-4aa4-aac3-2ab4e4427fc1/artifacts/1xscenxt_queer-inteligence-qi.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.10;
+  z-index: 0;
+  pointer-events: none;
+  transform: rotate(25deg);
 }
 
 .security-grid {
