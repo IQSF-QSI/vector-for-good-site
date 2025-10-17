@@ -10,6 +10,15 @@ import { Link } from 'react-router-dom';
 import { MOCK_DATA } from '../mock';
 import InvestorSection from './InvestorSection';
 import FounderSection from './FounderSection';
+import KIKIAssistant from './KIKIAssistant';
+import CaseStudies from './sections/CaseStudies';
+import TechnicalArchitecture from './sections/TechnicalArchitecture';
+import InteractiveROI from './sections/InteractiveROI';
+import Certifications from './sections/Certifications';
+import ComparisonTable from './sections/ComparisonTable';
+import MediaAndSocial from './sections/MediaAndSocial';
+import IQSFImpact from './sections/IQSFImpact';
+import '../styles/enhancements.css';
 
 const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
 const API = `${BACKEND_URL}/api`;
