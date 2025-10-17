@@ -87,6 +87,7 @@ const CommunityLanding = () => {
             <a href="#solutions" className="nav-link" onClick={(e) => { e.preventDefault(); document.getElementById('solutions').scrollIntoView({ behavior: 'smooth' }); }}>Solutions</a>
             <a href="#technology" className="nav-link" onClick={(e) => { e.preventDefault(); document.getElementById('technology').scrollIntoView({ behavior: 'smooth' }); }}>Technology</a>
             <Link to="/demo" className="nav-link">Live QSI</Link>
+            <Link to="/corporate-travel" className="nav-link">Travel App</Link>
             <Link to="/investors" className="nav-link">Investors</Link>
             <a href="#contact" className="nav-link" onClick={(e) => { e.preventDefault(); document.getElementById('contact').scrollIntoView({ behavior: 'smooth' }); }}>Contact</a>
             <Button className="demo-btn-header" onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}>Request Demo</Button>
