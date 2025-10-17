@@ -75,6 +75,12 @@ async def get_status_checks():
 api_router.include_router(get_demo_requests_router(db), tags=["Demo Requests"])
 api_router.include_router(get_qsi_metrics_router(db), tags=["QSI Metrics"])
 
+# Include corporate travel routers
+api_router.include_router(auth.router, prefix="/auth", tags=["Authentication"])
+api_router.include_router(travel.router, prefix="/travel", tags=["Travel Booking"])
+api_router.include_router(safety.router, prefix="/safety", tags=["Safety Intelligence"])
+api_router.include_router(trips.router, prefix="/trips", tags=["Trip & Expense Management"])
+
 # Include the router in the main app
 app.include_router(api_router)
 
