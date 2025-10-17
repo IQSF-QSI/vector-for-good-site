@@ -5,6 +5,7 @@ import "./styles/demo.css";
 import "./styles/investor.css";
 import "./styles/investor-page.css";
 import "./styles/corporate-travel.css";
+import "./styles/mobile-responsive.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import EnterpriseLanding from "./components/EnterpriseLanding";
 import CommunityLanding from "./components/CommunityLanding";
