@@ -577,6 +577,9 @@ const CommunityLanding = () => {
           </div>
         </div>
       </footer>
+
+      {/* KIKI QI Assistant */}
+      <KIKIAssistant />
     </div>
   );
 };
