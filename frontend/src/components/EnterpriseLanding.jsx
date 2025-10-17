@@ -11,6 +11,7 @@ import { MOCK_DATA } from '../mock';
 import InvestorSection from './InvestorSection';
 import FounderSection from './FounderSection';
 import KIKIAssistant from './KIKIAssistant';
+import MobileMenu from './MobileMenu';
 import CaseStudies from './sections/CaseStudies';
 import TechnicalArchitecture from './sections/TechnicalArchitecture';
 import InteractiveROI from './sections/InteractiveROI';
