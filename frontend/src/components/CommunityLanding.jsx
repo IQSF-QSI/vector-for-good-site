@@ -8,6 +8,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from './
 import { ArrowRight, Shield, Globe, Users, TrendingUp, Brain, Zap, CheckCircle, Target, Award, BarChart3, Lock, Loader2 } from 'lucide-react';
 import { toast } from 'sonner';
 import { MOCK_DATA } from '../mock';
+import FounderSection from './FounderSection';
 
 const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
 const API = `${BACKEND_URL}/api`;
