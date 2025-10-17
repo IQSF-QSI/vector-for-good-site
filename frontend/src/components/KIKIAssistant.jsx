@@ -269,7 +269,7 @@ const KIKIAssistant = () => {
           }}>
             <div style={{marginBottom: '1.5rem', textAlign: 'center'}}>
               <h4 style={{fontSize: '1rem', fontWeight: '700', marginBottom: '1rem', color: '#1f2937'}}>
-                Or Call Us Directly
+                Talk to a Human
               </h4>
               <a 
                 href={`tel:${OPENPHONE_NUMBER}`}
@@ -305,16 +305,17 @@ const KIKIAssistant = () => {
             </div>
 
             <div style={{borderTop: '1px solid #e5e7eb', paddingTop: '1.5rem'}}>
-              <h4 style={{fontSize: '1rem', fontWeight: '700', marginBottom: '1rem', color: '#1f2937'}}>
-                Or Book a Demo
+              <h4 style={{fontSize: '1rem', fontWeight: '700', marginBottom: '1rem', color: '#1f2937', textAlign: 'center'}}>
+                Or Schedule a Meeting
               </h4>
-              <form onSubmit={handleBookingSubmit} style={{display: 'flex', flexDirection: 'column', gap: '1rem'}}>
-                <input name="name" placeholder="Your Name" required style={{padding: '0.75rem', border: '1px solid #e5e7eb', borderRadius: '8px', fontSize: '0.875rem'}} />
-                <input name="email" type="email" placeholder="Work Email" required style={{padding: '0.75rem', border: '1px solid #e5e7eb', borderRadius: '8px', fontSize: '0.875rem'}} />
-                <input name="company" placeholder="Company" required style={{padding: '0.75rem', border: '1px solid #e5e7eb', borderRadius: '8px', fontSize: '0.875rem'}} />
-                <textarea name="message" placeholder="What are you most interested in?" rows="2" style={{padding: '0.75rem', border: '1px solid #e5e7eb', borderRadius: '8px', fontSize: '0.875rem', resize: 'none'}} />
-                <Button type="submit" style={{background: 'linear-gradient(135deg, #ec4899 0%, #8b5cf6 100%)'}}>Book Demo</Button>
-              </form>
+              <Cal
+                calLink={CAL_COM_LINK}
+                style={{width: "100%", height: "100%", overflow: "scroll"}}
+                config={{
+                  name: "Demo with Levi",
+                  layout: "month_view"
+                }}
+              />
             </div>
           </div>
         )}
