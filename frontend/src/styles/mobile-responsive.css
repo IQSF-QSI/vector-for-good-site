@@ -1,0 +1,306 @@
+/* Mobile Responsive Styles */
+
+/* Base mobile overrides */
+@media (max-width: 768px) {
+  /* Hero sections */
+  .hero-section {
+    padding: 4rem 1.5rem !important;
+  }
+  
+  .hero-title {
+    font-size: 2rem !important;
+    line-height: 1.2 !important;
+  }
+  
+  .hero-subtitle {
+    font-size: 1rem !important;
+  }
+  
+  .hero-stats {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem !important;
+  }
+  
+  /* Section containers */
+  .section-container {
+    padding: 3rem 1.5rem !important;
+  }
+  
+  .section-title-large {
+    font-size: 2rem !important;
+  }
+  
+  .section-title {
+    font-size: 1.75rem !important;
+  }
+  
+  /* Grid layouts */
+  .solutions-grid,
+  .metrics-grid,
+  .roi-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem !important;
+  }
+  
+  /* Cards */
+  .solution-card,
+  .metric-card,
+  .roi-card {
+    padding: 1.5rem !important;
+  }
+  
+  /* Forms */
+  .demo-form-card {
+    padding: 1.5rem !important;
+  }
+  
+  .form-group {
+    margin-bottom: 1rem !important;
+  }
+  
+  /* CTA sections */
+  .cta-container {
+    flex-direction: column !important;
+    gap: 2rem !important;
+  }
+  
+  .cta-content {
+    text-align: center !important;
+  }
+  
+  .cta-title {
+    font-size: 1.75rem !important;
+  }
+  
+  /* Header adjustments */
+  .header-content {
+    padding: 1rem 1.5rem !important;
+  }
+  
+  .logo-img {
+    height: 40px !important;
+  }
+  
+  /* Footer */
+  .footer-content {
+    padding: 2rem 1.5rem !important;
+  }
+  
+  .footer-sections {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+  }
+  
+  /* Case studies section */
+  .case-studies-section {
+    padding: 4rem 1.5rem !important;
+  }
+  
+  .case-study-card {
+    margin-bottom: 1.5rem !important;
+  }
+  
+  /* Tech architecture */
+  .tech-architecture-section {
+    padding: 4rem 1.5rem !important;
+  }
+  
+  .llm-flow {
+    flex-direction: column !important;
+    gap: 1rem !important;
+  }
+  
+  .llm-node {
+    width: 100% !important;
+    padding: 1.5rem !important;
+  }
+  
+  .llm-arrow {
+    transform: rotate(90deg);
+  }
+  
+  /* ROI Calculator */
+  .roi-calculator-enhanced {
+    padding: 2rem 1.5rem !important;
+  }
+  
+  .calculator-input-group {
+    margin-bottom: 1.5rem !important;
+  }
+  
+  /* Certifications */
+  .cert-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 1.5rem !important;
+  }
+  
+  /* Comparison table */
+  .comparison-table {
+    overflow-x: auto !important;
+  }
+  
+  .comparison-table table {
+    font-size: 0.875rem !important;
+  }
+  
+  .comparison-table th,
+  .comparison-table td {
+    padding: 0.75rem !important;
+  }
+  
+  /* Media section */
+  .media-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem !important;
+  }
+  
+  /* IQSF Impact */
+  .iqsf-stats {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 1rem !important;
+  }
+  
+  /* Travel Landing */
+  .travel-hero-title {
+    font-size: 2rem !important;
+  }
+  
+  .travel-hero-stats {
+    grid-template-columns: 1fr !important;
+  }
+  
+  .features-grid {
+    grid-template-columns: 1fr !important;
+  }
+  
+  /* KIKI Assistant Mobile */
+  .corporate-travel-app button[style*="ec4899"] {
+    bottom: 1rem !important;
+    right: 1rem !important;
+    width: 60px !important;
+    height: 60px !important;
+  }
+  
+  .corporate-travel-app > div[style*="fixed"][style*="420px"] {
+    width: 100% !important;
+    height: 100vh !important;
+    bottom: 0 !important;
+    right: 0 !important;
+    border-radius: 0 !important;
+  }
+  
+  /* Spacing adjustments */
+  .mb-6 {
+    margin-bottom: 2rem !important;
+  }
+  
+  .mb-8 {
+    margin-bottom: 3rem !important;
+  }
+  
+  .mb-12 {
+    margin-bottom: 4rem !important;
+  }
+  
+  .gap-6 {
+    gap: 1.5rem !important;
+  }
+  
+  .gap-8 {
+    gap: 2rem !important;
+  }
+  
+  /* Button sizes */
+  .btn-lg {
+    padding: 0.75rem 1.5rem !important;
+    font-size: 1rem !important;
+  }
+  
+  /* Travel Dashboard Mobile */
+  .nav-sidebar {
+    width: 100% !important;
+    position: relative !important;
+    height: auto !important;
+  }
+  
+  .main-content {
+    margin-left: 0 !important;
+    padding: 1rem !important;
+  }
+  
+  /* Modal fixes */
+  .modal-content {
+    width: 95% !important;
+    max-width: 100% !important;
+    margin: 0.5rem !important;
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 1.75rem !important;
+  }
+  
+  .section-title-large {
+    font-size: 1.5rem !important;
+  }
+  
+  .section-title {
+    font-size: 1.25rem !important;
+  }
+  
+  .cert-grid {
+    grid-template-columns: 1fr !important;
+  }
+  
+  .iqsf-stats {
+    grid-template-columns: 1fr !important;
+  }
+  
+  .cta-title {
+    font-size: 1.5rem !important;
+  }
+  
+  /* Stack buttons vertically on very small screens */
+  .cta-buttons,
+  .hero-buttons {
+    flex-direction: column !important;
+    width: 100% !important;
+  }
+  
+  .cta-buttons button,
+  .hero-buttons button {
+    width: 100% !important;
+  }
+}
+
+/* Landscape mobile */
+@media (max-width: 768px) and (orientation: landscape) {
+  .hero-section {
+    padding: 2rem 1.5rem !important;
+  }
+  
+  .hero-title {
+    font-size: 1.75rem !important;
+  }
+}
+
+/* Tablet */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .solutions-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  
+  .metrics-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  
+  .cert-grid {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+}
