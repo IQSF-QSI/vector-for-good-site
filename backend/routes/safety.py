@@ -189,10 +189,23 @@ async def get_multi_ai_safety_analysis(destination: str, country: str) -> Safety
             "analysis": "Safety analysis based on general guidelines."
         }]
     
-    avg_lgbtq = sum(r.get("lgbtqSafety", 75) for r in parsed_results) // len(parsed_results)
-    avg_political = sum(r.get("politicalStability", 80) for r in parsed_results) // len(parsed_results)
-    avg_health = sum(r.get("healthAdvisory", 85) for r in parsed_results) // len(parsed_results)
-    avg_crime = sum(r.get("crimeRate", 70) for r in parsed_results) // len(parsed_results)
+    # Safely extract numeric values
+    def safe_get_score(result, key, default):
+        value = result.get(key, default)
+        if isinstance(value, (int, float)):
+            return int(value)
+        elif isinstance(value, dict):
+            return default
+        else:
+            try:
+                return int(value)
+            except (ValueError, TypeError):
+                return default
+    
+    avg_lgbtq = sum(safe_get_score(r, "lgbtqSafety", 75) for r in parsed_results) // len(parsed_results)
+    avg_political = sum(safe_get_score(r, "politicalStability", 80) for r in parsed_results) // len(parsed_results)
+    avg_health = sum(safe_get_score(r, "healthAdvisory", 85) for r in parsed_results) // len(parsed_results)
+    avg_crime = sum(safe_get_score(r, "crimeRate", 70) for r in parsed_results) // len(parsed_results)
     
     # Overall score (average of all metrics)
     overall_score = (avg_lgbtq + avg_political + avg_health + avg_crime) // 4
