@@ -408,15 +408,18 @@ const CommunityLanding = () => {
       <section className="cta-section" id="contact">
         <div className="cta-container">
           <div className="cta-content">
-            <h2 className="cta-title">Ready to Transform Your ESG Strategy?</h2>
-            <p className="cta-subtitle">
+            <div style={{background: 'rgba(255, 255, 255, 0.15)', backdropFilter: 'blur(10px)', padding: '0.5rem 1rem', borderRadius: '2rem', display: 'inline-block', marginBottom: '1.5rem', fontSize: '0.9rem', fontWeight: '600', color: '#ffffff'}}>
+              🤖 Advanced AI Company
+            </div>
+            <h2 className="cta-title" style={{color: '#ffffff', textShadow: '0 2px 10px rgba(0,0,0,0.3)'}}>Ready to Transform Your ESG Strategy?</h2>
+            <p className="cta-subtitle" style={{color: '#ffffff', fontSize: '1.125rem', lineHeight: '1.8', textShadow: '0 1px 5px rgba(0,0,0,0.2)'}}>
               Join Fortune 50 leaders who are unlocking the full potential of the "S" in ESG with Queer Intelligence.
-              Schedule your personalized demo today.
+              Connect with <strong>KIKI QI</strong> (pronounced "Key"), our advanced AI assistant, for a personalized demo.
             </p>
             <div style={{marginTop: '2rem', display: 'flex', flexDirection: 'column', gap: '1rem'}}>
-              <div style={{display: 'flex', alignItems: 'center', gap: '0.75rem', fontSize: '1.125rem'}}>
+              <div style={{display: 'flex', alignItems: 'center', gap: '0.75rem', fontSize: '1.125rem', color: '#ffffff'}}>
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-                <a href="mailto:levi@vectorforgood.com" style={{color: 'inherit', textDecoration: 'none', fontWeight: '600'}}>levi@vectorforgood.com</a>
+                <a href="mailto:levi@vectorforgood.com" style={{color: '#ffffff', textDecoration: 'none', fontWeight: '600'}}>levi@vectorforgood.com</a>
               </div>
               <div style={{display: 'flex', alignItems: 'center', gap: '0.75rem', fontSize: '1.125rem'}}>
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
