@@ -96,6 +96,20 @@ const CommunityLanding = () => {
             <a href="#contact" className="nav-link" onClick={(e) => { e.preventDefault(); document.getElementById('contact').scrollIntoView({ behavior: 'smooth' }); }}>Contact</a>
             <Button className="demo-btn-header" onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}>Request Demo</Button>
           </nav>
+          <MobileMenu 
+            items={[
+              { label: 'Enterprise', href: '/' },
+              { label: 'Solutions', href: '#solutions', external: true, onClick: () => document.getElementById('solutions')?.scrollIntoView({ behavior: 'smooth' }) },
+              { label: 'Technology', href: '#technology', external: true, onClick: () => document.getElementById('technology')?.scrollIntoView({ behavior: 'smooth' }) },
+              { label: 'Live QSI', href: '/demo' },
+              { label: 'Travel App', href: '/corporate-travel' },
+              { label: 'Investors', href: '/investors' },
+              { label: 'Contact', href: '#contact', external: true, onClick: () => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' }) }
+            ]}
+            currentPage={window.location.pathname}
+            ctaText="Request Demo"
+            ctaAction={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+          />
         </div>
       </header>
 
