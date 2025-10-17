@@ -94,14 +94,14 @@ const EnterpriseLanding = () => {
       {/* Hero Section */}
       <section className="hero-section">
         <div className="hero-content">
-          <Badge className="hero-badge">Enterprise LGBTQ+ Safety Intelligence</Badge>
+          <Badge className="hero-badge">$63B ESG Intelligence Market • NVIDIA Inception Member</Badge>
           <h1 className="hero-title">
-            Protect Your People.
-            <span className="gradient-text"> Quantify Your Impact.</span>
+            The Bloomberg Terminal for
+            <span className="gradient-text"> LGBTQ+ Safety Intelligence</span>
           </h1>
           <p className="hero-subtitle">
-            Transform ESG compliance into competitive advantage with real-time LGBTQ+ safety analytics across 19+ global markets. 
-            Reduce liability, improve retention, and demonstrate measurable social impact to investors.
+            First-mover advantage in the only quantifiable "S" metrics platform for ESG reporting. 
+            Transform $150M+ liability risk into competitive advantage with real-time safety intelligence across 19+ global markets—proven with Fortune 50 enterprises.
           </p>
           <div className="hero-cta">
             <Button size="lg" className="primary-cta" onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}>
