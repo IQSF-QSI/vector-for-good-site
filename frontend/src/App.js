@@ -3,10 +3,12 @@ import "./styles/landing.css";
 import "./styles/enterprise.css";
 import "./styles/demo.css";
 import "./styles/investor.css";
+import "./styles/investor-page.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import EnterpriseLanding from "./components/EnterpriseLanding";
 import CommunityLanding from "./components/CommunityLanding";
 import EmployeeDemo from "./components/EmployeeDemo";
+import InvestorPage from "./components/InvestorPage";
 import { Toaster } from "./components/ui/sonner";
 
 function App() {
@@ -17,6 +19,7 @@ function App() {
           <Route path="/" element={<EnterpriseLanding />} />
           <Route path="/community" element={<CommunityLanding />} />
           <Route path="/demo" element={<EmployeeDemo />} />
+          <Route path="/investors" element={<InvestorPage />} />
         </Routes>
       </BrowserRouter>
       <Toaster position="top-right" />
