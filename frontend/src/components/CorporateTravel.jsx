@@ -1,6 +1,7 @@
 import React from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
 import { AuthProvider, useAuth } from '../contexts/AuthContext';
+import TravelLanding from './travel/TravelLanding';
 import Login from './travel/Login';
 import Register from './travel/Register';
 import Dashboard from './travel/Dashboard';
@@ -11,6 +12,7 @@ import SafetyIntelligence from './travel/SafetyIntelligence';
 import MyTrips from './travel/MyTrips';
 import Expenses from './travel/Expenses';
 import '../styles/corporate-travel.css';
+import '../styles/travel-landing.css';
 
 const ProtectedRoute = ({ children }) => {
   const { isAuthenticated, loading } = useAuth();
