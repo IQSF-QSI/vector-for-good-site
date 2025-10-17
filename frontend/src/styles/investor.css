@@ -1,0 +1,268 @@
+/* Investor & Founder Sections */
+
+.investor-section {
+  padding: 6rem 0;
+  background: linear-gradient(180deg, rgba(249, 115, 22, 0.03) 0%, rgba(236, 72, 153, 0.03) 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.investor-section::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1000px;
+  height: 1000px;
+  background-image: url('https://customer-assets.emergentagent.com/job_46189f81-3b3a-4aa4-aac3-2ab4e4427fc1/artifacts/1xscenxt_queer-inteligence-qi.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.04;
+  z-index: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+}
+
+.market-opportunity {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-bottom: 4rem;
+  position: relative;
+  z-index: 1;
+}
+
+.market-card {
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  background: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.market-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
+}
+
+.market-metric {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.market-metric:last-child {
+  border-bottom: none;
+}
+
+.market-value {
+  font-size: 2.5rem;
+  font-weight: 900;
+  font-family: 'Space Grotesk', sans-serif;
+  background: linear-gradient(135deg, #f97316 0%, #ec4899 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.market-label {
+  font-size: 0.95rem;
+  color: hsl(240, 5%, 40%);
+  line-height: 1.5;
+}
+
+/* Competitive Advantage */
+.competitive-advantage {
+  position: relative;
+  z-index: 1;
+}
+
+.advantage-title {
+  font-size: 2rem;
+  font-weight: 800;
+  font-family: 'Space Grotesk', sans-serif;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: hsl(240, 10%, 10%);
+}
+
+.advantage-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.advantage-item {
+  padding: 2rem;
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.advantage-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  border-color: rgba(249, 115, 22, 0.3);
+}
+
+.advantage-item svg {
+  margin-bottom: 1rem;
+}
+
+.advantage-item h4 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  color: hsl(240, 10%, 10%);
+}
+
+.advantage-item p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: hsl(240, 5%, 40%);
+}
+
+/* Founder Section */
+.founder-section {
+  padding: 6rem 0;
+  background: white;
+}
+
+.founder-content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.founder-bio-card {
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  background: white;
+}
+
+.founder-bio {
+  padding: 3rem;
+}
+
+.founder-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 2px solid rgba(249, 115, 22, 0.1);
+}
+
+.founder-name {
+  font-size: 2.5rem;
+  font-weight: 900;
+  font-family: 'Space Grotesk', sans-serif;
+  color: hsl(240, 10%, 10%);
+  margin-bottom: 0.5rem;
+}
+
+.founder-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #f97316;
+  margin-bottom: 0.25rem;
+}
+
+.founder-subtitle {
+  font-size: 1rem;
+  color: hsl(240, 5%, 40%);
+}
+
+.founder-badges {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.nvidia-badge-small {
+  background: linear-gradient(135deg, rgba(118, 185, 0, 0.1) 0%, rgba(118, 185, 0, 0.1) 100%);
+  color: #76b900;
+  border: 1px solid rgba(118, 185, 0, 0.3);
+  font-weight: 600;
+}
+
+.founder-highlights {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.highlight-item {
+  display: flex;
+  gap: 1.25rem;
+  align-items: flex-start;
+}
+
+.highlight-item svg {
+  color: #f97316;
+  flex-shrink: 0;
+  margin-top: 0.25rem;
+}
+
+.highlight-item strong {
+  display: block;
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: hsl(240, 10%, 10%);
+  margin-bottom: 0.5rem;
+}
+
+.highlight-item p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: hsl(240, 5%, 40%);
+}
+
+.founder-mission {
+  padding: 2rem;
+  background: linear-gradient(135deg, rgba(249, 115, 22, 0.05) 0%, rgba(236, 72, 153, 0.05) 100%);
+  border-left: 4px solid #f97316;
+  border-radius: 8px;
+}
+
+.mission-text {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: hsl(240, 5%, 25%);
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.mission-attribution {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #f97316;
+  text-align: right;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .market-opportunity,
+  .advantage-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .founder-bio {
+    padding: 2rem;
+  }
+
+  .founder-header {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .founder-name {
+    font-size: 2rem;
+  }
+
+  .market-value {
+    font-size: 2rem;
+  }
+}
