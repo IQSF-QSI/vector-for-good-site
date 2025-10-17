@@ -216,13 +216,29 @@ async def get_multi_ai_safety_analysis(destination: str, country: str) -> Safety
     all_analyses = []
     
     for r in parsed_results:
-        all_strategies.extend(r.get("mitigationStrategies", []))
-        all_alerts.extend(r.get("realTimeAlerts", []))
-        all_analyses.append(r.get("analysis", ""))
+        strategies = r.get("mitigationStrategies", [])
+        alerts = r.get("realTimeAlerts", [])
+        
+        # Ensure strategies are strings
+        if isinstance(strategies, list):
+            all_strategies.extend([str(s) for s in strategies if isinstance(s, (str, int, float))])
+        
+        # Ensure alerts are strings
+        if isinstance(alerts, list):
+            all_alerts.extend([str(a) for a in alerts if isinstance(a, (str, int, float))])
+            
+        all_analyses.append(str(r.get("analysis", "")))
     
-    # Remove duplicates
-    unique_strategies = list(set(all_strategies))[:6]
-    unique_alerts = list(set(all_alerts))[:3]
+    # Remove duplicates safely
+    try:
+        unique_strategies = list(set(all_strategies))[:6]
+    except TypeError:
+        unique_strategies = all_strategies[:6]
+    
+    try:
+        unique_alerts = list(set(all_alerts))[:3]
+    except TypeError:
+        unique_alerts = all_alerts[:3]
     combined_analysis = " | ".join([a[:100] for a in all_analyses if a])
     
     safety_score = SafetyScore(
