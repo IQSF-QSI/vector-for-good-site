@@ -8,6 +8,8 @@ import { ArrowRight, Shield, Globe, Users, TrendingUp, Brain, CheckCircle, Targe
 import { toast } from 'sonner';
 import { Link } from 'react-router-dom';
 import { MOCK_DATA } from '../mock';
+import InvestorSection from './InvestorSection';
+import FounderSection from './FounderSection';
 
 const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
 const API = `${BACKEND_URL}/api`;
