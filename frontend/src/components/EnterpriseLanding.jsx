@@ -84,7 +84,7 @@ const EnterpriseLanding = () => {
             <a href="#solutions" className="nav-link" onClick={(e) => { e.preventDefault(); document.getElementById('solutions').scrollIntoView({ behavior: 'smooth' }); }}>Solutions</a>
             <a href="#roi" className="nav-link" onClick={(e) => { e.preventDefault(); document.getElementById('roi').scrollIntoView({ behavior: 'smooth' }); }}>ROI</a>
             <Link to="/demo" className="nav-link">Live QSI</Link>
-            <a href="#security" className="nav-link" onClick={(e) => { e.preventDefault(); document.getElementById('security').scrollIntoView({ behavior: 'smooth' }); }}>Security</a>
+            <Link to="/investors" className="nav-link">Investors</Link>
             <Link to="/community" className="nav-link">Our Story</Link>
             <Button className="demo-btn-header" onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}>Request Demo</Button>
           </nav>
