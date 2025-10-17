@@ -320,6 +320,12 @@ const EnterpriseLanding = () => {
         </div>
       </section>
 
+      {/* Investor Section */}
+      <InvestorSection />
+
+      {/* Founder Section */}
+      <FounderSection />
+
       {/* Case Studies */}
       <section className="impact-section">
         <div className="section-container">
