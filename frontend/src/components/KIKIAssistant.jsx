@@ -193,7 +193,7 @@ const KIKIAssistant = () => {
             <Sparkles style={{width: '24px', height: '24px', color: '#ec4899'}} />
           </div>
           <div>
-            <div style={{fontWeight: '700', fontSize: '1.25rem'}}>KIKI QI</div>
+            <div style={{fontWeight: '700', fontSize: '1.25rem'}}>KIKI</div>
             <div style={{fontSize: '0.75rem', opacity: 0.9}}>Your Queer Intelligence Assistant</div>
           </div>
         </div>
