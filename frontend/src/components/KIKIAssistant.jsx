@@ -152,7 +152,7 @@ const KIKIAssistant = () => {
           fontSize: '0.875rem',
           fontWeight: '600'
         }}>
-          Chat with KIKI QI! 💜
+          Chat with KIKI! 💜
         </div>
       </div>
     );
