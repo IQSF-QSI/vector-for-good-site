@@ -330,43 +330,27 @@ const EnterpriseLanding = () => {
         </div>
       </section>
 
-      {/* Case Studies */}
-      <section className="impact-section">
-        <div className="section-container">
-          <div className="section-header-center">
-            <Badge className="section-badge">Proven Results</Badge>
-            <h2 className="section-title-large">Enterprise Success Stories</h2>
-          </div>
+      {/* Case Studies - NEW ENHANCED VERSION */}
+      <CaseStudies />
 
-          <Accordion type="single" collapsible className="case-studies-accordion">
-            {MOCK_DATA.caseStudies.map((study, index) => (
-              <AccordionItem key={index} value={`case-${index}`} className="case-study-item">
-                <AccordionTrigger className="case-study-trigger">
-                  <div className="case-study-header">
-                    <Award className="h-5 w-5" />
-                    <span className="case-study-company">{study.company}</span>
-                    <Badge className="case-study-industry">{study.industry}</Badge>
-                  </div>
-                </AccordionTrigger>
-                <AccordionContent className="case-study-content">
-                  <div className="case-study-detail">
-                    <p className="case-challenge"><strong>Business Challenge:</strong> {study.challenge}</p>
-                    <p className="case-solution"><strong>Vector for Good Solution:</strong> {study.solution}</p>
-                    <div className="case-results">
-                      <strong>Measured Results:</strong>
-                      <ul>
-                        {study.results.map((result, idx) => (
-                          <li key={idx}>{result}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                </AccordionContent>
-              </AccordionItem>
-            ))}
-          </Accordion>
-        </div>
-      </section>
+      {/* Interactive ROI Calculator */}
+      <InteractiveROI />
+
+      {/* Technical Architecture */}
+      <TechnicalArchitecture />
+
+      {/* Certifications and Trust */}
+      <Certifications />
+
+      {/* Comparison Table */}
+      <ComparisonTable />
+
+      {/* Media & Social Proof */}
+      <MediaAndSocial />
+
+      {/* IQSF Impact */}
+      <IQSFImpact />
+
 
       {/* CTA Section */}
       <section className="cta-section" id="contact">
