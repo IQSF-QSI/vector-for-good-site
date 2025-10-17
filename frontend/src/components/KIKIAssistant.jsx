@@ -2,10 +2,12 @@ import React, { useState, useEffect, useRef } from 'react';
 import { MessageSquare, X, Send, User, Calendar, Phone, Sparkles, PhoneCall } from 'lucide-react';
 import { Button } from './ui/button';
 import axios from 'axios';
+import Cal, { getCalApi } from "@calcom/embed-react";
 
 const API_URL = process.env.REACT_APP_BACKEND_URL || '';
 const OPENPHONE_API_KEY = '9FxAu3Vtm9VeZgN3UScTByDRZyuMOYWi';
 const OPENPHONE_NUMBER = '+18888888888'; // Replace with actual Quo/OpenPhone number
+const CAL_COM_LINK = 'levi'; // Cal.com username
 
 const KIKIAssistant = () => {
   const [isOpen, setIsOpen] = useState(false);
