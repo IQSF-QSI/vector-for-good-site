@@ -41,7 +41,7 @@ const KIKIAssistant = () => {
       setIsTyping(true);
       setTimeout(() => {
         setIsTyping(false);
-        addMessage('assistant', "Excellent choice! Let me help you schedule that. I'll need a few details. What's your name?");
+        addMessage('assistant', "Excellent choice! Let me show you my calendar powered by Cal.com. Pick any time that works for you - I'll be there! 📅");
         setShowBookingForm(true);
       }, 1000);
     } else if (action === 'questions') {
