@@ -99,6 +99,19 @@ const EnterpriseLanding = () => {
             <Link to="/community" className="nav-link">Our Story</Link>
             <Button className="demo-btn-header" onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}>Request Demo</Button>
           </nav>
+          <MobileMenu 
+            items={[
+              { label: 'Solutions', href: '#solutions', external: true, onClick: () => document.getElementById('solutions')?.scrollIntoView({ behavior: 'smooth' }) },
+              { label: 'ROI', href: '#roi', external: true, onClick: () => document.getElementById('roi')?.scrollIntoView({ behavior: 'smooth' }) },
+              { label: 'Live QSI', href: '/demo' },
+              { label: 'Travel App', href: '/corporate-travel' },
+              { label: 'Investors', href: '/investors' },
+              { label: 'Our Story', href: '/community' }
+            ]}
+            currentPage={window.location.pathname}
+            ctaText="Request Demo"
+            ctaAction={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+          />
         </div>
       </header>
 
