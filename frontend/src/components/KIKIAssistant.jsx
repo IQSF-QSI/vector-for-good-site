@@ -10,7 +10,7 @@ const KIKIAssistant = () => {
   const [messages, setMessages] = useState([
     {
       role: 'assistant',
-      content: "Hey there! I'm KIKI QI (pronounced 'Key') - your sassy but brilliant AI assistant powered by Queer Intelligence. 💜\n\nI can help you with:\n✨ Booking a demo\n🤓 Answering questions about Vector for Good\n👤 Connecting you to a human\n\nWhat brings you here today?",
+      content: "Hey there! I'm KIKI - your sassy but brilliant AI assistant powered by Queer Intelligence. 💜\n\nI can help you with:\n✨ Booking a demo\n🤓 Answering questions about Vector for Good\n👤 Connecting you to a human (via phone or email)\n\nWhat brings you here today?",
       timestamp: new Date()
     }
   ]);
