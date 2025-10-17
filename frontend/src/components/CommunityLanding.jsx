@@ -421,17 +421,17 @@ const CommunityLanding = () => {
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
                 <a href="mailto:levi@vectorforgood.com" style={{color: '#ffffff', textDecoration: 'none', fontWeight: '600'}}>levi@vectorforgood.com</a>
               </div>
-              <div style={{display: 'flex', alignItems: 'center', gap: '0.75rem', fontSize: '1.125rem'}}>
+              <div style={{display: 'flex', alignItems: 'center', gap: '0.75rem', fontSize: '1.125rem', color: '#ffffff'}}>
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
-                <a href="https://vectorforgood.com" target="_blank" rel="noopener noreferrer" style={{color: 'inherit', textDecoration: 'none', fontWeight: '600'}}>vectorforgood.com</a>
+                <a href="https://vectorforgood.com" target="_blank" rel="noopener noreferrer" style={{color: '#ffffff', textDecoration: 'none', fontWeight: '600'}}>vectorforgood.com</a>
               </div>
             </div>
           </div>
 
           <Card className="demo-form-card">
             <CardHeader>
-              <CardTitle>Request Enterprise Demo</CardTitle>
-              <CardDescription>We'll contact you within 24 hours to schedule your personalized QI demonstration</CardDescription>
+              <CardTitle>Connect with KIKI QI</CardTitle>
+              <CardDescription>Request a demo and experience Queer Intelligence technology powered by advanced AI</CardDescription>
             </CardHeader>
             <CardContent>
               <form onSubmit={handleSubmit} className="demo-form">
