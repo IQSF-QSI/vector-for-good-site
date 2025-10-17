@@ -507,6 +507,9 @@ const CommunityLanding = () => {
         </div>
       </section>
 
+      {/* IQSF Impact Section */}
+      <IQSFImpact />
+
       {/* Footer */}
       <footer className="footer">
         <div className="footer-content">
