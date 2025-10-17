@@ -33,6 +33,7 @@ const CorporateTravel = () => {
     <AuthProvider>
       <div className="corporate-travel-app">
         <Routes>
+          <Route path="/" element={<TravelLanding />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/dashboard" element={
@@ -70,7 +71,6 @@ const CorporateTravel = () => {
               <Expenses />
             </ProtectedRoute>
           } />
-          <Route path="/" element={<Navigate to="/corporate-travel/login" />} />
         </Routes>
       </div>
     </AuthProvider>
