@@ -84,7 +84,7 @@ const KIKIAssistant = () => {
       } else if (lowerInput.includes('how') || lowerInput.includes('work') || lowerInput.includes('technology')) {
         addMessage('assistant', "Ooh, a tech nerd! I LOVE IT! 🤓💜\n\nWe use a 4-LLM hidden relay system:\n1️⃣ GPT-5 for contextual analysis\n2️⃣ Claude Sonnet 4 for risk assessment\n3️⃣ Gemini 2.5 Pro for validation\n4️⃣ QI Consensus for final scoring\n\nIt's like having 4 brilliant minds working together, but faster and with less drama than a group project.\n\nWe analyze 195+ countries with real-time data from 50,000+ LGBTQ+ travelers. Want the deep dive?");
       } else if (lowerInput.includes('demo') || lowerInput.includes('book') || lowerInput.includes('meeting')) {
-        addMessage('assistant', "Yes! Let's get you scheduled! 📅\n\nI'll need your:\n• Name\n• Work Email\n• Company\n• What you're most excited to see\n\nShall we do this?");
+        addMessage('assistant', "Yes! Let's get you on the calendar! 📅\n\nYou can pick any time that works for you from my Cal.com schedule. See any availability that fits your schedule?");
         setShowBookingForm(true);
       } else if (lowerInput.includes('case stud') || lowerInput.includes('example') || lowerInput.includes('proof')) {
         addMessage('assistant', "Receipts? I got receipts! 📊\n\n💼 Global Tech Corp: 92% reduction in safety incidents, $2.4M saved annually\n🏦 Fortune 100 Financial: 18-point CEI score increase, $50M valuation premium\n🎯 International Consulting: 61% reduction in LGBTQ+ turnover, $8.7M saved\n\nThese are REAL results from Fortune 50 clients (anonymized for confidentiality, obvi).\n\nWant the full case studies?");
