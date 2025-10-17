@@ -274,9 +274,16 @@ async def get_safety_score(
     if cached_score:
         # If cached score is less than 24 hours old, return it
         from datetime import datetime, timedelta
-        last_updated = datetime.fromisoformat(cached_score["lastUpdated"])
-        if datetime.utcnow() - last_updated < timedelta(hours=24):
-            return SafetyScore(**cached_score)
+        
+        last_updated = cached_score["lastUpdated"]
+        if isinstance(last_updated, str):
+            last_updated = datetime.fromisoformat(last_updated)
+        elif not isinstance(last_updated, datetime):
+            # If it's not a datetime or string, skip cache
+            pass
+        else:
+            if datetime.utcnow() - last_updated < timedelta(hours=24):
+                return SafetyScore(**cached_score)
     
     # Generate new safety analysis using multi-AI
     safety_score = await get_multi_ai_safety_analysis(destination, country)
