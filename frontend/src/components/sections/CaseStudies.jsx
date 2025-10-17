@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card } from './ui/card';
+import { Card } from '../ui/card';
 import { TrendingUp, Users, Shield, DollarSign } from 'lucide-react';
 
 const caseStudies = [
