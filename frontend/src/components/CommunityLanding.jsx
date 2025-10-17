@@ -10,6 +10,7 @@ import { toast } from 'sonner';
 import { MOCK_DATA } from '../mock';
 import FounderSection from './FounderSection';
 import KIKIAssistant from './KIKIAssistant';
+import MobileMenu from './MobileMenu';
 import IQSFImpact from './sections/IQSFImpact';
 import '../styles/enhancements.css';
 
