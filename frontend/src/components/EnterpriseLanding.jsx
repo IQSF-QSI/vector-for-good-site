@@ -160,15 +160,15 @@ const EnterpriseLanding = () => {
             <div className="icon-wrapper problem-icon">
               <AlertTriangle className="h-8 w-8" />
             </div>
-            <h2 className="section-title">The $150M Risk</h2>
+            <h2 className="section-title">The Unmeasurable "S" Problem</h2>
             <p className="section-description">
-              LGBTQ+ employees face tangible safety risks in global operations, creating liability exposure, talent attrition, and ESG compliance gaps that traditional platforms cannot measure or mitigate.
+              <strong>$63B ESG market, yet 89% of investors say social impact data is unreliable.</strong> LGBTQ+ employees face quantifiable safety risks that create $150M+ liability exposure—but no platform can measure it. Until now.
             </p>
             <ul className="challenge-list">
-              <li><CheckCircle className="h-5 w-5 text-red-500" /> <strong>71%</strong> avoid public spaces due to safety fears</li>
-              <li><CheckCircle className="h-5 w-5 text-red-500" /> <strong>27% higher attrition</strong> without proper duty of care</li>
-              <li><CheckCircle className="h-5 w-5 text-red-500" /> <strong>Generic ESG tools</strong> lack geo-contextual LGBTQ+ data</li>
-              <li><CheckCircle className="h-5 w-5 text-red-500" /> <strong>Investor scrutiny</strong> on social impact transparency</li>
+              <li><CheckCircle className="h-5 w-5 text-red-500" /> <strong>71%</strong> of LGBTQ+ adults avoid public spaces—duty of care exposure</li>
+              <li><CheckCircle className="h-5 w-5 text-red-500" /> <strong>27% higher attrition</strong> costs Fortune 50s $15M+ annually per 1,000 employees</li>
+              <li><CheckCircle className="h-5 w-5 text-red-500" /> <strong>Zero competitors</strong> provide geo-contextual LGBTQ+ safety metrics</li>
+              <li><CheckCircle className="h-5 w-5 text-red-500" /> <strong>New SEC rules</strong> require quantifiable social impact—no one can deliver</li>
             </ul>
           </div>
 
