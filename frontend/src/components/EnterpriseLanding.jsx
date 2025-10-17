@@ -363,26 +363,29 @@ const EnterpriseLanding = () => {
       <section className="cta-section" id="contact">
         <div className="cta-container">
           <div className="cta-content">
-            <h2 className="cta-title">Ready to Mitigate Risk and Quantify Impact?</h2>
-            <p className="cta-subtitle">
-              Join Fortune 50 enterprises transforming LGBTQ+ employee safety from compliance burden to competitive advantage. Schedule your personalized demo and ROI analysis.
+            <div style={{background: 'rgba(255, 255, 255, 0.15)', backdropFilter: 'blur(10px)', padding: '0.5rem 1rem', borderRadius: '2rem', display: 'inline-block', marginBottom: '1.5rem', fontSize: '0.9rem', fontWeight: '600', color: '#ffffff'}}>
+              🤖 Advanced AI Company
+            </div>
+            <h2 className="cta-title" style={{color: '#ffffff', textShadow: '0 2px 10px rgba(0,0,0,0.3)'}}>Ready to Mitigate Risk and Quantify Impact?</h2>
+            <p className="cta-subtitle" style={{color: '#ffffff', fontSize: '1.125rem', lineHeight: '1.8', textShadow: '0 1px 5px rgba(0,0,0,0.2)'}}>
+              Join Fortune 50 enterprises transforming LGBTQ+ employee safety from compliance burden to competitive advantage. Schedule your personalized demo with <strong>KIKI QI</strong> (pronounced "Key"), our AI assistant powered by Queer Intelligence technology.
             </p>
             <div style={{marginTop: '2rem', display: 'flex', flexDirection: 'column', gap: '1rem'}}>
-              <div style={{display: 'flex', alignItems: 'center', gap: '0.75rem', fontSize: '1.125rem'}}>
+              <div style={{display: 'flex', alignItems: 'center', gap: '0.75rem', fontSize: '1.125rem', color: '#ffffff'}}>
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-                <a href="mailto:levi@vectorforgood.com" style={{color: 'inherit', textDecoration: 'none', fontWeight: '600'}}>levi@vectorforgood.com</a>
+                <a href="mailto:levi@vectorforgood.com" style={{color: '#ffffff', textDecoration: 'none', fontWeight: '600'}}>levi@vectorforgood.com</a>
               </div>
-              <div style={{display: 'flex', alignItems: 'center', gap: '0.75rem', fontSize: '1.125rem'}}>
+              <div style={{display: 'flex', alignItems: 'center', gap: '0.75rem', fontSize: '1.125rem', color: '#ffffff'}}>
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
-                <a href="https://vectorforgood.com" target="_blank" rel="noopener noreferrer" style={{color: 'inherit', textDecoration: 'none', fontWeight: '600'}}>vectorforgood.com</a>
+                <a href="https://vectorforgood.com" target="_blank" rel="noopener noreferrer" style={{color: '#ffffff', textDecoration: 'none', fontWeight: '600'}}>vectorforgood.com</a>
               </div>
             </div>
           </div>
 
           <Card className="demo-form-card">
             <CardHeader>
-              <CardTitle>Request Enterprise Demo</CardTitle>
-              <CardDescription>Speak with our enterprise solutions team within 24 hours</CardDescription>
+              <CardTitle>Request Enterprise Demo with KIKI QI</CardTitle>
+              <CardDescription>Connect with our AI assistant and enterprise solutions team powered by Queer Intelligence</CardDescription>
             </CardHeader>
             <CardContent>
               <form onSubmit={handleSubmit} className="demo-form">
