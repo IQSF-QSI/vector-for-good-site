@@ -347,9 +347,6 @@ const CommunityLanding = () => {
         </div>
       </section>
 
-      {/* Founder Section */}
-      <FounderSection />
-
       {/* Impact & Case Studies */}
       <section className="impact-section" id="impact">
         <div className="section-container">
