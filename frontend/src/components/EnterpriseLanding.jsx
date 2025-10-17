@@ -176,15 +176,15 @@ const EnterpriseLanding = () => {
             <div className="icon-wrapper solution-icon">
               <Shield className="h-8 w-8" />
             </div>
-            <h2 className="section-title">Enterprise-Grade Solution</h2>
+            <h2 className="section-title">First Quantifiable "S" in ESG</h2>
             <p className="section-description">
-              The only platform providing real-time, geo-contextual LGBTQ+ safety intelligence with privacy-preserving data architecture and intersectional risk analytics—built for enterprise compliance and scale.
+              <strong>Proprietary Queer Intelligence (QI) technology: 4-LLM hidden relay system trained on lived experience.</strong> The only platform delivering investor-grade social impact metrics with real-time geo-contextual safety intelligence across 19+ markets.
             </p>
             <ul className="solution-list">
-              <li><CheckCircle className="h-5 w-5 text-emerald-500" /> <strong>Duty of Care Compliance</strong> - Legal obligation fulfillment</li>
-              <li><CheckCircle className="h-5 w-5 text-emerald-500" /> <strong>Quantifiable ESG Metrics</strong> - Investor-grade reporting</li>
-              <li><CheckCircle className="h-5 w-5 text-emerald-500" /> <strong>Real-Time Risk Intelligence</strong> - 19+ global markets</li>
-              <li><CheckCircle className="h-5 w-5 text-emerald-500" /> <strong>Privacy-First Architecture</strong> - GDPR/SOC 2 compliant</li>
+              <li><CheckCircle className="h-5 w-5 text-emerald-500" /> <strong>$2.4M Average Savings</strong> - Proven ROI with Fortune 50 clients</li>
+              <li><CheckCircle className="h-5 w-5 text-emerald-500" /> <strong>First-Mover Data Moat</strong> - Community-built intelligence competitors can't replicate</li>
+              <li><CheckCircle className="h-5 w-5 text-emerald-500" /> <strong>Global QSI Standard</strong> - Becoming the Bloomberg Terminal for LGBTQ+ safety</li>
+              <li><CheckCircle className="h-5 w-5 text-emerald-500" /> <strong>NVIDIA-Backed Technology</strong> - Inception Program member with enterprise-grade AI</li>
             </ul>
           </div>
         </div>
