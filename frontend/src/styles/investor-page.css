@@ -1,0 +1,485 @@
+/* Investor Page Specific Styles */
+
+.investor-page {
+  font-family: 'Inter', sans-serif;
+  color: hsl(240, 10%, 10%);
+}
+
+/* Header */
+.investor-header {
+  background: white;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  padding: 1.5rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  backdrop-filter: blur(12px);
+}
+
+.investor-header-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Hero */
+.investor-hero {
+  background: linear-gradient(180deg, rgba(249, 115, 22, 0.05) 0%, rgba(236, 72, 153, 0.05) 50%, white 100%);
+  padding: 6rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.investor-hero::before {
+  content: '';
+  position: absolute;
+  top: -100px;
+  right: -200px;
+  width: 900px;
+  height: 900px;
+  background-image: url('https://customer-assets.emergentagent.com/job_46189f81-3b3a-4aa4-aac3-2ab4e4427fc1/artifacts/1xscenxt_queer-inteligence-qi.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.08;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.investor-hero-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.investor-hero-badge {
+  background: linear-gradient(135deg, rgba(249, 115, 22, 0.15) 0%, rgba(236, 72, 153, 0.15) 100%);
+  color: #f97316;
+  border: 1px solid rgba(249, 115, 22, 0.4);
+  font-weight: 700;
+  padding: 0.625rem 1.5rem;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.investor-hero-title {
+  font-size: 4rem;
+  font-weight: 900;
+  font-family: 'Space Grotesk', sans-serif;
+  line-height: 1.1;
+  margin-bottom: 2rem;
+  color: hsl(240, 10%, 10%);
+}
+
+.investor-hero-subtitle {
+  font-size: 1.375rem;
+  line-height: 1.7;
+  color: hsl(240, 5%, 35%);
+  max-width: 900px;
+  margin: 0 auto 3rem;
+}
+
+.investor-hero-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  margin-bottom: 3rem;
+  padding: 3rem;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+.hero-stat-item {
+  text-align: center;
+}
+
+.investor-hero-cta {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+/* Pitch Video */
+.pitch-video-section {
+  padding: 6rem 0;
+  background: white;
+}
+
+.video-wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+}
+
+.pitch-video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Opportunity Section */
+.opportunity-section {
+  padding: 6rem 0;
+  background: linear-gradient(180deg, rgba(249, 115, 22, 0.02) 0%, rgba(236, 72, 153, 0.02) 100%);
+}
+
+.opportunity-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.opportunity-card {
+  border: 2px solid rgba(0, 0, 0, 0.08);
+  background: white;
+}
+
+.problem-card {
+  border-left: 4px solid #ef4444;
+}
+
+.solution-card {
+  border-left: 4px solid #10b981;
+}
+
+.opportunity-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.opportunity-list li {
+  padding-left: 1.5rem;
+  position: relative;
+  line-height: 1.6;
+  font-size: 1.05rem;
+}
+
+.opportunity-list li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 1.3;
+}
+
+.problem-card .opportunity-list li::before {
+  color: #ef4444;
+}
+
+.solution-card .opportunity-list li::before {
+  color: #10b981;
+}
+
+/* Traction Section */
+.traction-section {
+  padding: 6rem 0;
+  background: white;
+}
+
+.traction-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.traction-card {
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.traction-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+.traction-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+/* Business Model */
+.business-model-section {
+  padding: 6rem 0;
+  background: linear-gradient(180deg, rgba(249, 115, 22, 0.03) 0%, rgba(236, 72, 153, 0.03) 100%);
+}
+
+.business-model-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.business-model-card {
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  background: white;
+}
+
+.model-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: hsl(240, 5%, 40%);
+  margin-bottom: 1.5rem;
+}
+
+.model-metrics {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.metric-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  background: rgba(249, 115, 22, 0.05);
+  border-radius: 8px;
+}
+
+.metric-label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: hsl(240, 5%, 40%);
+}
+
+.metric-value {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #f97316;
+}
+
+/* Use of Funds */
+.use-of-funds-section {
+  padding: 6rem 0;
+  background: white;
+}
+
+.funds-allocation {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.funds-chart {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.fund-item {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.fund-bar {
+  height: 60px;
+  border-radius: 12px;
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.fund-bar:hover {
+  transform: scaleX(1.02);
+}
+
+.fund-bar.engineering {
+  background: linear-gradient(90deg, #f97316 0%, #ec4899 100%);
+}
+
+.fund-bar.data {
+  background: linear-gradient(90deg, #8b5cf6 0%, #3b82f6 100%);
+}
+
+.fund-bar.team {
+  background: linear-gradient(90deg, #10b981 0%, #059669 100%);
+}
+
+.fund-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fund-category {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: hsl(240, 10%, 10%);
+}
+
+.fund-amount {
+  font-size: 2rem;
+  font-weight: 900;
+  font-family: 'Space Grotesk', sans-serif;
+  background: linear-gradient(135deg, #f97316 0%, #ec4899 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.fund-description {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: hsl(240, 5%, 40%);
+}
+
+/* Contact Section */
+.investor-contact-section {
+  padding: 6rem 0;
+  background: linear-gradient(135deg, rgba(249, 115, 22, 0.05) 0%, rgba(236, 72, 153, 0.05) 100%);
+}
+
+.investor-contact-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.contact-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.contact-title {
+  font-size: 3rem;
+  font-weight: 900;
+  font-family: 'Space Grotesk', sans-serif;
+  line-height: 1.2;
+  color: hsl(240, 10%, 10%);
+}
+
+.contact-subtitle {
+  font-size: 1.25rem;
+  line-height: 1.7;
+  color: hsl(240, 5%, 40%);
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.125rem;
+}
+
+.info-item svg {
+  color: #f97316;
+}
+
+.info-item a {
+  color: #f97316;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.info-item a:hover {
+  color: #ec4899;
+}
+
+.investor-contact-form-card {
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Footer */
+.investor-footer {
+  background: hsl(240, 10%, 10%);
+  color: hsl(0, 0%, 75%);
+  padding: 2rem 0;
+}
+
+.investor-footer-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.footer-links a {
+  color: hsl(0, 0%, 75%);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+  color: #f97316;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .investor-hero-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .opportunity-grid,
+  .business-model-grid,
+  .investor-contact-container {
+    grid-template-columns: 1fr;
+  }
+
+  .traction-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .investor-hero-title {
+    font-size: 2.5rem;
+  }
+
+  .investor-hero-stats {
+    grid-template-columns: 1fr;
+    padding: 2rem;
+  }
+
+  .traction-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .investor-hero-cta {
+    flex-direction: column;
+  }
+}
