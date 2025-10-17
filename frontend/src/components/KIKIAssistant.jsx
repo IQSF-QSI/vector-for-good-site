@@ -52,7 +52,7 @@ const KIKIAssistant = () => {
       setIsTyping(true);
       setTimeout(() => {
         setIsTyping(false);
-        addMessage('assistant', "I feel replaced already! 😢 Just kidding - humans are great too.\n\nYou can reach our team at:\n📧 levi@vectorforgood.com\n🌐 vectorforgood.com\n\nOr fill out the form below and they'll contact you within 24 hours!");
+        addMessage('assistant', "I feel replaced already! 😢 Just kidding - humans are great too.\n\nYou can reach our team:\n📞 Click to Call Now (via OpenPhone)\n📧 levi@vectorforgood.com\n🌐 vectorforgood.com\n\nOr fill out the form and they'll contact you within 24 hours!");
         setShowBookingForm(true);
       }, 1500);
     }
