@@ -9,6 +9,9 @@ import { ArrowRight, Shield, Globe, Users, TrendingUp, Brain, Zap, CheckCircle, 
 import { toast } from 'sonner';
 import { MOCK_DATA } from '../mock';
 import FounderSection from './FounderSection';
+import KIKIAssistant from './KIKIAssistant';
+import IQSFImpact from './sections/IQSFImpact';
+import '../styles/enhancements.css';
 
 const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
 const API = `${BACKEND_URL}/api`;
