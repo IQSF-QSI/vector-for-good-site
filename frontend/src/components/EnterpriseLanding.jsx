@@ -513,6 +513,9 @@ const EnterpriseLanding = () => {
           </div>
         </div>
       </footer>
+
+      {/* KIKI QI Assistant */}
+      <KIKIAssistant />
     </div>
   );
 };
