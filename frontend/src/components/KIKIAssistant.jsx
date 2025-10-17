@@ -1,9 +1,11 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { MessageSquare, X, Send, User, Calendar, Phone, Sparkles } from 'lucide-react';
+import { MessageSquare, X, Send, User, Calendar, Phone, Sparkles, PhoneCall } from 'lucide-react';
 import { Button } from './ui/button';
 import axios from 'axios';
 
 const API_URL = process.env.REACT_APP_BACKEND_URL || '';
+const OPENPHONE_API_KEY = '9FxAu3Vtm9VeZgN3UScTByDRZyuMOYWi';
+const OPENPHONE_NUMBER = '+18888888888'; // Replace with actual Quo/OpenPhone number
 
 const KIKIAssistant = () => {
   const [isOpen, setIsOpen] = useState(false);
