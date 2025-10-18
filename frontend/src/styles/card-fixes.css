@@ -1,0 +1,460 @@
+/* Card Fixes and Enhancements */
+
+/* Base Card Styles */
+.card,
+[class*="card"] {
+  border-radius: 16px !important;
+  border: 1px solid #e5e7eb !important;
+  background: white !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08) !important;
+  transition: all 0.3s ease !important;
+  overflow: hidden !important;
+}
+
+.card:hover,
+[class*="card"]:hover {
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12) !important;
+  transform: translateY(-4px) !important;
+}
+
+/* Card Headers */
+.card-header,
+[class*="CardHeader"] {
+  padding: 1.5rem !important;
+  border-bottom: 1px solid #f3f4f6 !important;
+  background: white !important;
+}
+
+.card-title,
+[class*="CardTitle"] {
+  font-size: 1.25rem !important;
+  font-weight: 700 !important;
+  color: #1f2937 !important;
+  margin: 0 !important;
+}
+
+.card-description,
+[class*="CardDescription"] {
+  font-size: 0.875rem !important;
+  color: #6b7280 !important;
+  margin-top: 0.5rem !important;
+}
+
+/* Card Content */
+.card-content,
+[class*="CardContent"] {
+  padding: 1.5rem !important;
+}
+
+/* Solution Cards */
+.solution-card {
+  background: white !important;
+  border-radius: 16px !important;
+  padding: 2rem !important;
+  border: 1px solid #e5e7eb !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08) !important;
+  transition: all 0.3s ease !important;
+  height: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.solution-card:hover {
+  border-color: #8b5cf6 !important;
+  box-shadow: 0 12px 32px rgba(139, 92, 246, 0.15) !important;
+  transform: translateY(-6px) !important;
+}
+
+.solution-icon {
+  width: 56px !important;
+  height: 56px !important;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+  border-radius: 14px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin-bottom: 1.5rem !important;
+  color: white !important;
+}
+
+.solution-title {
+  font-size: 1.5rem !important;
+  font-weight: 700 !important;
+  color: #1f2937 !important;
+  margin-bottom: 1rem !important;
+}
+
+.solution-description {
+  font-size: 1rem !important;
+  line-height: 1.6 !important;
+  color: #4b5563 !important;
+  flex-grow: 1 !important;
+}
+
+/* Metric Cards */
+.metric-card {
+  background: linear-gradient(135deg, #fef3c7 0%, #fde68a 50%, #fbbf24 100%) !important;
+  border-radius: 16px !important;
+  padding: 2rem !important;
+  color: white !important;
+  box-shadow: 0 8px 24px rgba(251, 191, 36, 0.3) !important;
+  transition: all 0.3s ease !important;
+  border: none !important;
+}
+
+.metric-card:hover {
+  box-shadow: 0 16px 40px rgba(251, 191, 36, 0.4) !important;
+  transform: translateY(-6px) scale(1.02) !important;
+}
+
+.metric-value {
+  font-size: 3rem !important;
+  font-weight: 800 !important;
+  line-height: 1 !important;
+  margin-bottom: 0.75rem !important;
+  color: #1f2937 !important;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+}
+
+.metric-label {
+  font-size: 1rem !important;
+  font-weight: 600 !important;
+  color: #78350f !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.05em !important;
+}
+
+/* Case Study Cards */
+.case-study-card {
+  background: white !important;
+  border-radius: 16px !important;
+  padding: 2rem !important;
+  border: 1px solid #e5e7eb !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08) !important;
+  transition: all 0.3s ease !important;
+  height: 100% !important;
+}
+
+.case-study-card:hover {
+  border-color: #8b5cf6 !important;
+  box-shadow: 0 16px 40px rgba(139, 92, 246, 0.2) !important;
+  transform: translateY(-8px) !important;
+}
+
+.case-study-header {
+  display: flex !important;
+  align-items: center !important;
+  gap: 1rem !important;
+  margin-bottom: 1.5rem !important;
+  padding-bottom: 1.5rem !important;
+  border-bottom: 2px solid #f3f4f6 !important;
+}
+
+.case-study-logo {
+  width: 60px !important;
+  height: 60px !important;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+  border-radius: 12px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  color: white !important;
+  font-weight: 800 !important;
+  font-size: 1.5rem !important;
+  flex-shrink: 0 !important;
+}
+
+.case-study-meta h3 {
+  font-size: 1.25rem !important;
+  font-weight: 700 !important;
+  color: #1f2937 !important;
+  margin-bottom: 0.25rem !important;
+}
+
+.case-study-meta p {
+  font-size: 0.875rem !important;
+  color: #6b7280 !important;
+}
+
+.case-study-challenge,
+.case-study-solution,
+.case-study-results {
+  padding: 1rem !important;
+  border-radius: 8px !important;
+  margin-bottom: 1rem !important;
+}
+
+.case-study-challenge {
+  background: #fef3c7 !important;
+  border-left: 4px solid #f59e0b !important;
+}
+
+.case-study-challenge h4 {
+  font-size: 0.875rem !important;
+  font-weight: 700 !important;
+  color: #92400e !important;
+  margin-bottom: 0.5rem !important;
+}
+
+.case-study-solution {
+  background: #dbeafe !important;
+  border-left: 4px solid #3b82f6 !important;
+}
+
+.case-study-solution h4 {
+  font-size: 0.875rem !important;
+  font-weight: 700 !important;
+  color: #1e40af !important;
+  margin-bottom: 0.5rem !important;
+}
+
+.case-study-results {
+  background: #d1fae5 !important;
+  border-left: 4px solid #10b981 !important;
+}
+
+.case-study-results h4 {
+  font-size: 0.875rem !important;
+  font-weight: 700 !important;
+  color: #065f46 !important;
+  margin-bottom: 0.75rem !important;
+}
+
+.case-study-metrics {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 1rem !important;
+  margin-top: 1rem !important;
+}
+
+.metric-box {
+  text-align: center !important;
+  padding: 1rem !important;
+  background: white !important;
+  border-radius: 8px !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05) !important;
+}
+
+/* Demo Form Card */
+.demo-form-card {
+  background: white !important;
+  border-radius: 20px !important;
+  padding: 2rem !important;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15) !important;
+  border: none !important;
+}
+
+/* Feature Cards */
+.feature-card {
+  background: white !important;
+  border-radius: 16px !important;
+  padding: 2rem !important;
+  border: 1px solid #e5e7eb !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08) !important;
+  transition: all 0.3s ease !important;
+  height: 100% !important;
+}
+
+.feature-card:hover {
+  border-color: #8b5cf6 !important;
+  box-shadow: 0 12px 32px rgba(139, 92, 246, 0.15) !important;
+  transform: translateY(-6px) !important;
+}
+
+.feature-icon-wrapper {
+  width: 4rem !important;
+  height: 4rem !important;
+  border-radius: 12px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin-bottom: 1.5rem !important;
+}
+
+.feature-title {
+  font-size: 1.5rem !important;
+  font-weight: 700 !important;
+  color: #1f2937 !important;
+  margin-bottom: 1rem !important;
+}
+
+.feature-description {
+  font-size: 1rem !important;
+  color: #6b7280 !important;
+  line-height: 1.6 !important;
+  margin-bottom: 1.5rem !important;
+}
+
+/* Hotel and Flight Cards */
+.hotel-card,
+.flight-card {
+  background: white !important;
+  border-radius: 16px !important;
+  overflow: hidden !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08) !important;
+  transition: all 0.3s ease !important;
+  border: 1px solid #e5e7eb !important;
+}
+
+.hotel-card:hover,
+.flight-card:hover {
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15) !important;
+  transform: translateY(-4px) !important;
+  border-color: #8b5cf6 !important;
+}
+
+.flight-card {
+  padding: 1.5rem !important;
+  margin-bottom: 1rem !important;
+}
+
+/* Travel Cards */
+.travel-card {
+  transition: all 0.3s ease !important;
+  border-radius: 16px !important;
+  overflow: hidden !important;
+  background: white !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08) !important;
+  border: 1px solid #e5e7eb !important;
+}
+
+.travel-card:hover {
+  transform: translateY(-6px) !important;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.15) !important;
+  border-color: #8b5cf6 !important;
+}
+
+/* Safety Score Card */
+.safety-score-card {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%) !important;
+  border-radius: 20px !important;
+  padding: 2rem !important;
+  color: white !important;
+  box-shadow: 0 16px 40px rgba(245, 87, 108, 0.3) !important;
+  border: none !important;
+}
+
+/* Certification Badge Cards */
+.cert-badge {
+  background: white !important;
+  padding: 2rem !important;
+  border-radius: 16px !important;
+  border: 2px solid #e5e7eb !important;
+  transition: all 0.3s ease !important;
+  text-align: center !important;
+}
+
+.cert-badge:hover {
+  border-color: #8b5cf6 !important;
+  transform: translateY(-6px) scale(1.05) !important;
+  box-shadow: 0 12px 32px rgba(139, 92, 246, 0.2) !important;
+}
+
+/* Media Cards */
+.media-card {
+  background: rgba(255, 255, 255, 0.1) !important;
+  backdrop-filter: blur(10px) !important;
+  padding: 2rem !important;
+  border-radius: 16px !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  transition: all 0.3s ease !important;
+}
+
+.media-card:hover {
+  background: rgba(255, 255, 255, 0.15) !important;
+  transform: translateY(-6px) !important;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2) !important;
+}
+
+/* Mobile Card Adjustments */
+@media (max-width: 768px) {
+  .card,
+  .solution-card,
+  .metric-card,
+  .case-study-card,
+  .feature-card,
+  .demo-form-card {
+    padding: 1.5rem !important;
+  }
+  
+  .card-header,
+  [class*="CardHeader"] {
+    padding: 1.25rem !important;
+  }
+  
+  .card-content,
+  [class*="CardContent"] {
+    padding: 1.25rem !important;
+  }
+  
+  .solution-icon,
+  .feature-icon-wrapper {
+    width: 48px !important;
+    height: 48px !important;
+  }
+  
+  .solution-title,
+  .feature-title {
+    font-size: 1.25rem !important;
+  }
+  
+  .metric-value {
+    font-size: 2.5rem !important;
+  }
+  
+  .case-study-logo {
+    width: 50px !important;
+    height: 50px !important;
+    font-size: 1.25rem !important;
+  }
+  
+  .case-study-metrics {
+    grid-template-columns: 1fr !important;
+    gap: 0.75rem !important;
+  }
+  
+  .metric-box {
+    padding: 0.75rem !important;
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 480px) {
+  .card,
+  .solution-card,
+  .metric-card,
+  .case-study-card,
+  .feature-card {
+    padding: 1.25rem !important;
+  }
+  
+  .metric-value {
+    font-size: 2rem !important;
+  }
+  
+  .solution-title,
+  .feature-title {
+    font-size: 1.125rem !important;
+  }
+}
+
+/* Fix card overflow */
+.card *,
+[class*="card"] * {
+  word-wrap: break-word !important;
+  overflow-wrap: break-word !important;
+}
+
+/* Ensure consistent card heights in grids */
+.solutions-grid,
+.features-grid,
+.metrics-grid {
+  display: grid !important;
+  align-items: stretch !important;
+}
+
+.solutions-grid > *,
+.features-grid > *,
+.metrics-grid > * {
+  height: 100% !important;
+}
