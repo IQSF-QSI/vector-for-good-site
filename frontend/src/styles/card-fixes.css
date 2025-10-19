@@ -229,10 +229,38 @@
 
 .metric-box {
   text-align: center !important;
-  padding: 1rem !important;
+  padding: 1.25rem !important;
   background: white !important;
-  border-radius: 8px !important;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05) !important;
+  border-radius: 12px !important;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
+  transition: all 0.3s ease !important;
+  border: 2px solid rgba(16, 185, 129, 0.2) !important;
+}
+
+.metric-box:hover {
+  transform: translateY(-4px) !important;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15) !important;
+  border-color: rgba(16, 185, 129, 0.5) !important;
+}
+
+.metric-box .metric-value {
+  font-size: 2rem !important;
+  font-weight: 800 !important;
+  color: #1f2937 !important;
+  line-height: 1.2 !important;
+  margin-bottom: 0.5rem !important;
+  display: block !important;
+  text-shadow: none !important;
+}
+
+.metric-box .metric-label {
+  font-size: 0.75rem !important;
+  font-weight: 700 !important;
+  color: #92400e !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.05em !important;
+  line-height: 1.4 !important;
+  display: block !important;
 }
 
 /* Demo Form Card */
