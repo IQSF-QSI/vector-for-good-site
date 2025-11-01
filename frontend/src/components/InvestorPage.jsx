@@ -465,7 +465,7 @@ const InvestorPage = () => {
             <Link to="/">Enterprise</Link>
             <Link to="/community">Community</Link>
             <Link to="/demo">Live Demo</Link>
-            <a href="mailto:levi@vectorforgood.com">Contact</a>
+            <a href="mailto:hello@vectorforgood.com">Contact</a>
           </div>
         </div>
       </footer>
