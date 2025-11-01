@@ -295,7 +295,7 @@ const EmployeeDemo = () => {
               <div className="contact-hr">
                 <p><strong>Need Support?</strong></p>
                 <p>Contact your company's HR department or reach out to Vector for Good at:</p>
-                <a href="mailto:levi@vectorforgood.com" className="contact-email">levi@vectorforgood.com</a>
+                <a href="mailto:hello@vectorforgood.com" className="contact-email">hello@vectorforgood.com</a>
               </div>
             </CardContent>
           </Card>
