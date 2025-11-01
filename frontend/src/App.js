@@ -7,12 +7,18 @@ import "./styles/investor-page.css";
 import "./styles/corporate-travel.css";
 import "./styles/mobile-responsive.css";
 import "./styles/card-fixes.css";
+import "./styles/blog.css";
+import "./styles/privacy.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import EnterpriseLanding from "./components/EnterpriseLanding";
 import CommunityLanding from "./components/CommunityLanding";
 import EmployeeDemo from "./components/EmployeeDemo";
 import InvestorPage from "./components/InvestorPage";
 import CorporateTravel from "./components/CorporateTravel";
+import BlogListing from "./components/BlogListing";
+import BlogPost from "./components/BlogPost";
+import PrivacyGDPR from "./components/PrivacyGDPR";
+import PrivacyCCPA from "./components/PrivacyCCPA";
 import { Toaster } from "./components/ui/sonner";
 
 function App() {
