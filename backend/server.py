@@ -13,7 +13,7 @@ from datetime import datetime, timezone
 # Import route modules
 from routes.demo_requests import get_demo_requests_router
 from routes.qsi_metrics import get_qsi_metrics_router
-from routes import auth, travel, safety, trips
+from routes import auth, travel, safety, trips, blog
 
 
 ROOT_DIR = Path(__file__).parent
