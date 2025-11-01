@@ -576,6 +576,7 @@ const CommunityLanding = () => {
             <h4 className="footer-title">Company</h4>
             <ul className="footer-links">
               <li><Link to="/">Enterprise Solutions</Link></li>
+              <li><Link to="/blog">KIKI's Blog</Link></li>
               <li><Link to="/demo">Live QSI Demo</Link></li>
               <li><a href="#impact" onClick={(e) => { e.preventDefault(); document.getElementById('impact').scrollIntoView({ behavior: 'smooth' }); }}>Impact Report</a></li>
               <li><a href="mailto:levi@vectorforgood.com">Contact & Careers</a></li>
@@ -586,7 +587,10 @@ const CommunityLanding = () => {
         <div className="footer-bottom">
           <p>&copy; 2025 Vector for Good. All rights reserved. Built by queer for queer, better for all.</p>
           <div className="footer-legal">
+            <Link to="/privacy/gdpr">GDPR Privacy</Link>
+            <Link to="/privacy/ccpa">CCPA Privacy</Link>
             <a href="mailto:levi@vectorforgood.com">levi@vectorforgood.com</a>
+            <Link to="/blog">Blog</Link>
             <Link to="/demo">Try Live Demo</Link>
             <Link to="/">Enterprise</Link>
           </div>
