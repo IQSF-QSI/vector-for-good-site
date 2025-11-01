@@ -120,7 +120,12 @@ const BlogPost = () => {
       {/* Post Content */}
       <article className="post-article">
         <div className="post-content-wrapper">
-          <ReactMarkdown className="markdown-content">
+          <ReactMarkdown 
+            className="markdown-content"
+            components={{
+              // Remove className from components to avoid the error
+            }}
+          >
             {post.content}
           </ReactMarkdown>
 
