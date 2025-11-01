@@ -376,7 +376,7 @@ const InvestorPage = () => {
             <div className="contact-info">
               <div className="info-item">
                 <Mail className="h-5 w-5" />
-                <a href="mailto:levi@vectorforgood.com">levi@vectorforgood.com</a>
+                <a href="mailto:hello@vectorforgood.com">hello@vectorforgood.com</a>
               </div>
             </div>
           </div>
