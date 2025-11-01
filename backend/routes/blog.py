@@ -317,6 +317,144 @@ async def get_tags():
     
     return [{"name": k, "count": v} for k, v in sorted(tags.items(), key=lambda x: x[1], reverse=True)]
 
+@router.post("/seed-sample-posts")
+async def seed_sample_posts():
+    """
+    Seed the blog with sample sassy posts
+    """
+    from datetime import datetime, timezone
+    import uuid
+    
+    sample_posts = [
+        {
+            'id': str(uuid.uuid4()),
+            'title': 'Category Is: Safe Space Realness - Creating LGBTQ+ Inclusive Workplaces',
+            'slug': 'category-is-safe-space-realness-creating-lgbtq-inclusive-workplaces',
+            'content': """Honey, let's talk about creating safe spaces at work. Rainbow flags aren't enough - we need real policies.
+
+## The Tea on True Inclusion
+
+Creating LGBTQ+ inclusive workplaces means queer employees can show up authentically without fear.
+
+### What Actually Works
+
+**1. Pronouns Are Non-Negotiable** - Use them in emails, Zoom names, directories.
+
+**2. Benefits That Serve** - Healthcare must cover gender-affirming care and diverse families.
+
+**3. Zero Tolerance** - Believe reports, investigate immediately, trauma-informed processes.
+
+**4. Leadership Representation** - LGBTQ+ people in C-suite positions.
+
+## The Business Case
+
+McKinsey: 21% higher retention, 15% more innovation. BCG: 2.3x higher cash flow per employee.
+
+Category is: Authentic Inclusion Eleganza 💅""",
+            'excerpt': "Creating safe spaces at work requires real policies, not just rainbow flags. Here's what actually works.",
+            'author': 'KIKI QI',
+            'tags': ['workplace', 'lgbtq+', 'inclusion', 'safety'],
+            'category': 'LGBTQ+ Workplace',
+            'citations': ['McKinsey & Company (2024)', 'Boston Consulting Group (2023)'],
+            'published': True,
+            'publish_date': datetime.now(timezone.utc).isoformat(),
+            'created_at': datetime.now(timezone.utc).isoformat(),
+            'updated_at': datetime.now(timezone.utc).isoformat(),
+            'views': 0,
+            'sass_level': 10
+        },
+        {
+            'id': str(uuid.uuid4()),
+            'title': 'The Tea on ESG: Why Fortune 500 Cannot Ignore LGBTQ+ Metrics',
+            'slug': 'the-tea-on-esg-why-fortune-500-cannot-ignore-lgbtq-metrics',
+            'content': """$35 trillion in assets are managed under ESG principles. Investors are watching your LGBTQ+ policies.
+
+## Why Investors Care
+
+**Risk**: Poor policies = higher turnover, lawsuits, reputation damage  
+**Performance**: High diversity = 5.8% better annual performance  
+**Future**: Gen Z won't work for discriminatory companies
+
+## QSI Metrics That Matter
+
+1. Legal Protections Score
+2. Cultural Safety Index  
+3. External Impact Rating
+4. Risk Assessment
+
+## Case Study: Salesforce
+
+After LGBTQ+ policies: 22% higher satisfaction, 3.2x stock growth vs competitors.
+
+Are you serving ESG Eleganza? 📊""",
+            'excerpt': "With $35 trillion in ESG assets, investors are watching. Why Queer Safety metrics matter to your bottom line.",
+            'author': 'KIKI QI',
+            'tags': ['esg', 'metrics', 'investment', 'qsi'],
+            'category': 'ESG & Metrics',
+            'citations': ['MSCI (2024)', 'BlackRock (2024)'],
+            'published': True,
+            'publish_date': datetime.now(timezone.utc).isoformat(),
+            'created_at': datetime.now(timezone.utc).isoformat(),
+            'updated_at': datetime.now(timezone.utc).isoformat(),
+            'views': 0,
+            'sass_level': 10
+        },
+        {
+            'id': str(uuid.uuid4()),
+            'title': 'Passport to Safety: LGBTQ+ Travel Risk Assessment That Slays',
+            'slug': 'passport-to-safety-lgbtq-travel-risk-assessment-that-slays',
+            'content': """Corporate travel safety for LGBTQ+ employees isn't optional - it's duty of care.
+
+## The Reality
+
+72 countries criminalize LGBTQ+ people. Your duty of care doesn't stop at the border.
+
+## Pre-Travel Checklist
+
+✅ Destination safety score  
+✅ Local laws and customs  
+✅ Safe accommodations  
+✅ Emergency contacts  
+✅ Health resources  
+
+## What Companies Must Do
+
+**1. Risk Assessment** - Use QSI scores for all destinations  
+**2. Right to Refuse** - Employees can decline unsafe travel  
+**3. Safety Briefings** - Pre-travel training  
+**4. Emergency Protocol** - 24/7 support  
+**5. Insurance** - Comprehensive coverage
+
+## Bottom Line
+
+If you're sending LGBTQ+ employees somewhere, you better have done your homework. Category is: Travel Safety Realness 🌍""",
+            'excerpt': "72 countries criminalize LGBTQ+ people. Corporate travel safety isn't optional - it's duty of care.",
+            'author': 'KIKI QI',
+            'tags': ['travel', 'safety', 'corporate', 'lgbtq+'],
+            'category': 'Travel Safety',
+            'citations': ['International Lesbian, Gay, Bisexual, Trans and Intersex Association (2024)'],
+            'published': True,
+            'publish_date': datetime.now(timezone.utc).isoformat(),
+            'created_at': datetime.now(timezone.utc).isoformat(),
+            'updated_at': datetime.now(timezone.utc).isoformat(),
+            'views': 0,
+            'sass_level': 10
+        }
+    ]
+    
+    # Clear existing posts
+    blog_posts_db.clear()
+    
+    # Add sample posts
+    for post in sample_posts:
+        blog_posts_db.append(post)
+    
+    return {
+        "success": True,
+        "message": f"Successfully seeded {len(sample_posts)} blog posts!",
+        "total_posts": len(blog_posts_db)
+    }
+
 @router.post("/generate-content-batch")
 async def generate_content_batch():
     """
