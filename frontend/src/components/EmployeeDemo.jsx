@@ -308,7 +308,7 @@ const EmployeeDemo = () => {
         <div className="demo-footer-links">
           <Link to="/">Enterprise</Link>
           <Link to="/community">Community</Link>
-          <a href="mailto:levi@vectorforgood.com">Contact</a>
+          <a href="mailto:hello@vectorforgood.com">Contact</a>
         </div>
       </footer>
     </div>
