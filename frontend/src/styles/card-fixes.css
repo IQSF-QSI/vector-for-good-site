@@ -478,7 +478,16 @@
   }
   
   .metric-box {
-    padding: 0.75rem !important;
+    padding: 1rem !important;
+    min-height: 100px !important;
+  }
+  
+  .metric-box .metric-value {
+    font-size: 2rem !important;
+  }
+  
+  .metric-box .metric-label {
+    font-size: 0.75rem !important;
   }
 }
 
