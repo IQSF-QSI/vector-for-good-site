@@ -1,0 +1,382 @@
+/* Privacy Policy Styles */
+.privacy-policy-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 2rem 1rem;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+}
+
+.privacy-header {
+  max-width: 900px;
+  margin: 0 auto 2rem;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.back-button {
+  background: #667eea;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.back-button:hover {
+  background: #5568d3;
+  transform: translateX(-4px);
+}
+
+.privacy-header h1 {
+  font-size: 2.5rem;
+  color: #1a202c;
+  margin-bottom: 0.5rem;
+  font-weight: 800;
+}
+
+.privacy-header .subtitle {
+  font-size: 1.25rem;
+  color: #4a5568;
+  margin-bottom: 0.5rem;
+}
+
+.last-updated {
+  font-size: 0.9rem;
+  color: #718096;
+  font-style: italic;
+}
+
+.privacy-content {
+  max-width: 900px;
+  margin: 0 auto;
+  background: white;
+  padding: 3rem;
+  border-radius: 16px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  line-height: 1.8;
+}
+
+.privacy-content section {
+  margin-bottom: 3rem;
+}
+
+.privacy-content h2 {
+  font-size: 1.8rem;
+  color: #667eea;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  border-bottom: 3px solid #667eea;
+  padding-bottom: 0.5rem;
+}
+
+.privacy-content h3 {
+  font-size: 1.4rem;
+  color: #4a5568;
+  margin: 1.5rem 0 1rem;
+  font-weight: 600;
+}
+
+.privacy-content h4 {
+  font-size: 1.1rem;
+  color: #2d3748;
+  margin: 1rem 0 0.5rem;
+  font-weight: 600;
+}
+
+.privacy-content p {
+  margin-bottom: 1rem;
+  color: #4a5568;
+  font-size: 1.05rem;
+}
+
+.privacy-content ul {
+  margin: 1rem 0 1rem 1.5rem;
+  color: #4a5568;
+}
+
+.privacy-content li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+.privacy-content a {
+  color: #667eea;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.privacy-content a:hover {
+  color: #764ba2;
+  text-decoration: underline;
+}
+
+.privacy-content strong {
+  color: #2d3748;
+  font-weight: 600;
+}
+
+/* Highlight boxes */
+.highlight, .important-note {
+  background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+  border-left: 4px solid #f59e0b;
+  padding: 1.25rem;
+  margin: 1.5rem 0;
+  border-radius: 8px;
+  color: #78350f;
+  font-weight: 500;
+}
+
+/* Rights Grid */
+.rights-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.right-item {
+  background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 2px solid #38bdf8;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.right-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(56, 189, 248, 0.3);
+}
+
+.right-item h4 {
+  color: #0369a1;
+  margin-top: 0;
+  font-size: 1.15rem;
+}
+
+.right-item p {
+  color: #075985;
+  margin-bottom: 0;
+  font-size: 0.95rem;
+}
+
+/* CCPA Rights Cards */
+.ccpa-rights {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.right-card {
+  background: linear-gradient(135deg, #faf5ff 0%, #f3e8ff 100%);
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 2px solid #a855f7;
+  box-shadow: 0 4px 15px rgba(168, 85, 247, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.right-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(168, 85, 247, 0.3);
+}
+
+.right-card h4 {
+  color: #7c3aed;
+  margin: 0 0 0.75rem 0;
+  font-size: 1.2rem;
+}
+
+.right-card p, .right-card ul {
+  color: #6b21a8;
+  font-size: 0.95rem;
+}
+
+.right-card ul {
+  margin-left: 1.25rem;
+}
+
+/* Info Categories */
+.info-category {
+  background: #f9fafb;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  border-radius: 10px;
+  border-left: 4px solid #667eea;
+}
+
+.info-category h3 {
+  color: #667eea;
+  margin-top: 0;
+}
+
+.business-purpose {
+  background: white;
+  padding: 0.75rem;
+  margin-top: 1rem;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  border: 1px solid #e5e7eb;
+}
+
+/* Exercise Methods */
+.exercise-methods {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.method {
+  background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%);
+  padding: 1.5rem;
+  border-radius: 12px;
+  text-align: center;
+  border: 2px solid #10b981;
+  transition: transform 0.3s ease;
+}
+
+.method:hover {
+  transform: scale(1.05);
+}
+
+.method h4 {
+  color: #047857;
+  margin: 0 0 0.75rem 0;
+  font-size: 1.1rem;
+}
+
+.method p {
+  color: #065f46;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* Policy Footer */
+.policy-footer {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 3px solid #e5e7eb;
+  text-align: center;
+}
+
+.policy-footer p {
+  margin: 0.5rem 0;
+  color: #6b7280;
+}
+
+.motto {
+  font-style: italic;
+  font-size: 1.1rem;
+  color: #667eea;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+.do-not-sell-notice {
+  background: linear-gradient(135deg, #fee2e2 0%, #fecaca 100%);
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: 2px solid #ef4444;
+  margin-top: 2rem;
+  color: #991b1b;
+  font-weight: 600;
+}
+
+.do-not-sell-notice strong {
+  color: #7f1d1d;
+  font-size: 1.1rem;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+/* Shine Theory Section */
+.shine-theory {
+  background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+  padding: 2rem;
+  border-radius: 12px;
+  border: 3px solid #f59e0b;
+  text-align: center;
+}
+
+.shine-theory h2 {
+  color: #78350f;
+  border: none;
+  padding: 0;
+}
+
+.shine-theory p {
+  color: #92400e;
+  font-size: 1.1rem;
+  margin: 1rem 0;
+}
+
+.sass {
+  font-style: italic;
+  font-weight: 600;
+  font-size: 1.15rem;
+  color: #7c2d12;
+}
+
+.exercise-rights {
+  background: #f0fdf4;
+  padding: 1.25rem;
+  border-radius: 8px;
+  border-left: 4px solid #10b981;
+  margin-top: 1.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .privacy-policy-container {
+    padding: 1rem 0.5rem;
+  }
+
+  .privacy-header {
+    padding: 1.5rem;
+  }
+
+  .privacy-header h1 {
+    font-size: 1.75rem;
+  }
+
+  .privacy-content {
+    padding: 1.5rem;
+  }
+
+  .privacy-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .rights-grid,
+  .ccpa-rights,
+  .exercise-methods {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .privacy-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .privacy-content {
+    padding: 1rem;
+  }
+
+  .privacy-content h2 {
+    font-size: 1.25rem;
+  }
+
+  .privacy-content p,
+  .privacy-content li {
+    font-size: 0.95rem;
+  }
+}
