@@ -31,7 +31,7 @@ const PrivacyGDPR = () => {
           <p><strong>Vector for Good</strong></p>
           <p>Public Benefit Corporation & 501(c)(3) Organization</p>
           <p>NVIDIA Inception Partner</p>
-          <p>Contact: <a href="mailto:privacy@vectorforgood.com">privacy@vectorforgood.com</a></p>
+          <p>Contact: <a href="mailto:hello@vectorforgood.com">hello@vectorforgood.com</a></p>
         </section>
 
         <section>
