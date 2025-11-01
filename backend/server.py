@@ -81,6 +81,9 @@ api_router.include_router(travel.router, prefix="/travel", tags=["Travel Booking
 api_router.include_router(safety.router, prefix="/safety", tags=["Safety Intelligence"])
 api_router.include_router(trips.router, prefix="/trips", tags=["Trip & Expense Management"])
 
+# Include blog router
+api_router.include_router(blog.router, prefix="/blog", tags=["Blog"])
+
 # Include the router in the main app
 app.include_router(api_router)
 
