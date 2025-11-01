@@ -38,7 +38,7 @@ const InvestorPage = () => {
       }
     } catch (error) {
       console.error('Error submitting inquiry:', error);
-      toast.error('Failed to submit inquiry. Please email directly: levi@vectorforgood.com');
+      toast.error('Failed to submit inquiry. Please email directly: hello@vectorforgood.com');
     } finally {
       setIsSubmitting(false);
     }
