@@ -511,6 +511,7 @@ const EnterpriseLanding = () => {
             <h4 className="footer-title">Resources</h4>
             <ul className="footer-links">
               <li><Link to="/demo">Live QSI Demo</Link></li>
+              <li><Link to="/blog">KIKI's Blog</Link></li>
               <li><a href="#roi" onClick={(e) => { e.preventDefault(); document.getElementById('roi').scrollIntoView({ behavior: 'smooth' }); }}>ROI Calculator</a></li>
               <li><a href="#security" onClick={(e) => { e.preventDefault(); document.getElementById('security').scrollIntoView({ behavior: 'smooth' }); }}>Security & Compliance</a></li>
               <li><a href="#contact" onClick={(e) => { e.preventDefault(); document.getElementById('contact').scrollIntoView({ behavior: 'smooth' }); }}>Request Demo</a></li>
@@ -521,7 +522,10 @@ const EnterpriseLanding = () => {
         <div className="footer-bottom">
           <p>&copy; 2025 Vector for Good. All rights reserved. Built by the community, trusted by enterprises.</p>
           <div className="footer-legal">
+            <Link to="/privacy/gdpr">GDPR Privacy Policy</Link>
+            <Link to="/privacy/ccpa">CCPA Privacy Policy</Link>
             <a href="mailto:levi@vectorforgood.com">levi@vectorforgood.com</a>
+            <Link to="/blog">Blog</Link>
             <Link to="/demo">Try Live Demo</Link>
             <Link to="/community">Our Story</Link>
           </div>
