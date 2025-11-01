@@ -264,7 +264,9 @@ const PrivacyGDPR = () => {
           <p>For any questions about this privacy policy or data protection:</p>
           <ul>
             <li><strong>Email:</strong> <a href="mailto:privacy@vectorforgood.com">privacy@vectorforgood.com</a></li>
-            <li><strong>Data Protection Officer:</strong> <a href="mailto:dpo@vectorforgood.com">dpo@vectorforgood.com</a></li>
+            <li><strong>Data Protection Officer:</strong> <a href="mailto:privacy@vectorforgood.com">privacy@vectorforgood.com</a></li>
+            <li><strong>Compliance:</strong> <a href="mailto:compliance@vectorforgood.com">compliance@vectorforgood.com</a></li>
+            <li><strong>General Inquiries:</strong> <a href="mailto:hello@vectorforgood.com">hello@vectorforgood.com</a></li>
             <li><strong>Support:</strong> Chat with KIKI QI on our platform</li>
           </ul>
         </section>
