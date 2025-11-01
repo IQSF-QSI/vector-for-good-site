@@ -502,7 +502,7 @@ const EnterpriseLanding = () => {
             <ul className="footer-links">
               <li><Link to="/community">Our Story</Link></li>
               <li><Link to="/">Enterprise Solutions</Link></li>
-              <li><a href="mailto:levi@vectorforgood.com">Careers</a></li>
+              <li><a href="mailto:hello@vectorforgood.com">Careers</a></li>
               <li><a href="#contact" onClick={(e) => { e.preventDefault(); document.getElementById('contact').scrollIntoView({ behavior: 'smooth' }); }}>Contact</a></li>
             </ul>
           </div>
