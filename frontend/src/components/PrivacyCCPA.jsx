@@ -318,8 +318,10 @@ const PrivacyCCPA = () => {
           <h2>14. Contact Information</h2>
           <p>For CCPA-related questions or to exercise your rights:</p>
           <ul>
-            <li><strong>Email:</strong> <a href="mailto:ccpa@vectorforgood.com">ccpa@vectorforgood.com</a></li>
-            <li><strong>General Privacy:</strong> <a href="mailto:privacy@vectorforgood.com">privacy@vectorforgood.com</a></li>
+            <li><strong>CCPA Requests:</strong> <a href="mailto:ccpa@vectorforgood.com">ccpa@vectorforgood.com</a></li>
+            <li><strong>Privacy:</strong> <a href="mailto:privacy@vectorforgood.com">privacy@vectorforgood.com</a></li>
+            <li><strong>Compliance:</strong> <a href="mailto:compliance@vectorforgood.com">compliance@vectorforgood.com</a></li>
+            <li><strong>General Inquiries:</strong> <a href="mailto:hello@vectorforgood.com">hello@vectorforgood.com</a></li>
             <li><strong>KIKI QI Chat:</strong> Available on our platform</li>
           </ul>
         </section>
