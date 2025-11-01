@@ -31,6 +31,10 @@ function App() {
           <Route path="/demo" element={<EmployeeDemo />} />
           <Route path="/investors" element={<InvestorPage />} />
           <Route path="/corporate-travel/*" element={<CorporateTravel />} />
+          <Route path="/blog" element={<BlogListing />} />
+          <Route path="/blog/:slug" element={<BlogPost />} />
+          <Route path="/privacy/gdpr" element={<PrivacyGDPR />} />
+          <Route path="/privacy/ccpa" element={<PrivacyCCPA />} />
         </Routes>
       </BrowserRouter>
       <Toaster position="top-right" />
