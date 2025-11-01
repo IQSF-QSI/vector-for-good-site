@@ -579,7 +579,7 @@ const CommunityLanding = () => {
               <li><Link to="/blog">KIKI's Blog</Link></li>
               <li><Link to="/demo">Live QSI Demo</Link></li>
               <li><a href="#impact" onClick={(e) => { e.preventDefault(); document.getElementById('impact').scrollIntoView({ behavior: 'smooth' }); }}>Impact Report</a></li>
-              <li><a href="mailto:levi@vectorforgood.com">Contact & Careers</a></li>
+              <li><a href="mailto:hello@vectorforgood.com">Contact & Careers</a></li>
             </ul>
           </div>
         </div>
