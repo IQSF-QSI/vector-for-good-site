@@ -11,6 +11,7 @@ import "./styles/blog.css";
 import "./styles/privacy.css";
 import "./styles/faq.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HelmetProvider } from 'react-helmet-async';
 import EnterpriseLanding from "./components/EnterpriseLanding";
 import CommunityLanding from "./components/CommunityLanding";
 import EmployeeDemo from "./components/EmployeeDemo";
