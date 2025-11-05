@@ -125,7 +125,7 @@ const EnterpriseLanding = () => {
           </h1>
           <p className="hero-subtitle">
             First-mover advantage in the only quantifiable "S" metrics platform for ESG reporting. 
-            Transform $150M+ liability risk into competitive advantage with real-time safety intelligence across 19+ global markets—proven with Fortune 50 enterprises.
+            Transform $150M+ liability risk into competitive advantage with real-time safety intelligence across 195+ countries—proven with Fortune 50 enterprises.
           </p>
           <div className="hero-cta">
             <Button size="lg" className="primary-cta" onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}>
@@ -143,12 +143,12 @@ const EnterpriseLanding = () => {
               <div className="stat-label">Avg. Annual Savings</div>
             </div>
             <div className="stat-item">
-              <div className="stat-value">35%</div>
-              <div className="stat-label">ESG Score Improvement</div>
+              <div className="stat-value">92%</div>
+              <div className="stat-label">Incident Reduction</div>
             </div>
             <div className="stat-item">
-              <div className="stat-value">27%</div>
-              <div className="stat-label">Attrition Reduction</div>
+              <div className="stat-value">195+</div>
+              <div className="stat-label">Countries Covered</div>
             </div>
           </div>
         </div>
