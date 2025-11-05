@@ -169,7 +169,7 @@ const EnterpriseLanding = () => {
             <div className="trust-badge">
               <img 
                 src="https://customer-assets.emergentagent.com/job_46189f81-3b3a-4aa4-aac3-2ab4e4427fc1/artifacts/zsjo26yt_nvidia-inception-program-badge-rgb-for-screen.png" 
-                alt="NVIDIA Inception Program" 
+                alt="NVIDIA Inception Program Member Badge - Vector for Good AI-powered LGBTQ+ safety intelligence platform" 
                 className="nvidia-badge"
               />
             </div>
