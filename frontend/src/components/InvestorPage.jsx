@@ -51,6 +51,20 @@ const InvestorPage = () => {
 
   return (
     <div className="investor-page">
+      <Helmet>
+        <title>Investor Relations | ESG, DEI & Social Impact | Vector for Good</title>
+        <meta name="description" content="Invest in measurable social impact. See Vector for Good's ESG, DEI, and financial performance — trusted by Fortune 50 enterprises worldwide." />
+        <meta property="og:title" content="Investor Relations | ESG Leadership | Vector for Good" />
+        <meta property="og:description" content="Join us in capturing the €20B+ ESG/DEI market opportunity. Quantifiable social impact, NVIDIA-backed technology, and Fortune 50 traction." />
+        <meta property="og:image" content="https://customer-assets.emergentagent.com/job_46189f81-3b3a-4aa4-aac3-2ab4e4427fc1/artifacts/lawirn1j_IMG_0284%202.PNG" />
+        <meta property="og:url" content="https://vectorforgood.com/investors" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Investor Relations | ESG Leadership | Vector for Good" />
+        <meta name="twitter:description" content="Invest in the Bloomberg Terminal for LGBTQ+ Safety Intelligence. €750K SAFE, €20B+ market, NVIDIA-backed." />
+        <meta name="twitter:image" content="https://customer-assets.emergentagent.com/job_46189f81-3b3a-4aa4-aac3-2ab4e4427fc1/artifacts/lawirn1j_IMG_0284%202.PNG" />
+        <link rel="canonical" href="https://vectorforgood.com/investors" />
+      </Helmet>
       {/* Header */}
       <header className="investor-header">
         <div className="investor-header-content">
