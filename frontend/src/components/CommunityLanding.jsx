@@ -591,6 +591,7 @@ const CommunityLanding = () => {
             <Link to="/privacy/gdpr">GDPR Privacy</Link>
             <Link to="/privacy/ccpa">CCPA Privacy</Link>
             <a href="mailto:hello@vectorforgood.com">hello@vectorforgood.com</a>
+            <Link to="/faq">FAQ</Link>
             <Link to="/blog">Blog</Link>
             <Link to="/demo">Try Live Demo</Link>
             <Link to="/">Enterprise</Link>
