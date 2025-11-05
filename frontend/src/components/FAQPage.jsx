@@ -149,8 +149,32 @@ const FAQPage = () => {
     }));
   };
 
+  // Generate FAQ schema for SEO
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqs.flatMap(category => 
+      category.questions.map(q => ({
+        "@type": "Question",
+        "name": q.question,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": q.answer
+        }
+      }))
+    )
+  };
+
   return (
     <div className="faq-page">
+      <Helmet>
+        <title>LGBTQ+ Safety Intelligence FAQ | Vector for Good Enterprise Platform</title>
+        <meta name="description" content="Common questions about LGBTQ+ safety intelligence, ESG reporting metrics, duty of care compliance, and Queer Intelligence (QI) technology for enterprises." />
+        <meta name="keywords" content="LGBTQ+ safety intelligence FAQ, ESG reporting questions, duty of care compliance, Queer Intelligence, enterprise safety platform" />
+        <script type="application/ld+json">
+          {JSON.stringify(faqSchema)}
+        </script>
+      </Helmet>
       <div className="faq-hero">
         <h1>Frequently Asked Questions</h1>
         <p>Everything you need to know about Queer Safety Intelligence</p>
