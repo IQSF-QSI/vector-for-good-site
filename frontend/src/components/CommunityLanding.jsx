@@ -577,6 +577,7 @@ const CommunityLanding = () => {
             <ul className="footer-links">
               <li><Link to="/">Enterprise Solutions</Link></li>
               <li><Link to="/blog">KIKI's Blog</Link></li>
+              <li><Link to="/faq">FAQ</Link></li>
               <li><Link to="/demo">Live QSI Demo</Link></li>
               <li><a href="#impact" onClick={(e) => { e.preventDefault(); document.getElementById('impact').scrollIntoView({ behavior: 'smooth' }); }}>Impact Report</a></li>
               <li><a href="mailto:hello@vectorforgood.com">Contact & Careers</a></li>
