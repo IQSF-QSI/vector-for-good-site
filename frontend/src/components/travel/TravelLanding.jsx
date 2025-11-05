@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import { Button } from '../ui/button';
 import { Card, CardContent } from '../ui/card';
 import { 
