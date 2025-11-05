@@ -11,7 +11,7 @@ from datetime import datetime, timedelta
 import uuid
 
 # Get backend URL from environment
-BACKEND_URL = "https://vector-travels.preview.emergentagent.com/api"
+BACKEND_URL = "https://seo-content-hub-5.preview.emergentagent.com/api"
 
 class CorporateTravelAPITester:
     def __init__(self):
