@@ -61,7 +61,8 @@ const InteractiveROI = () => {
           </div>
         </div>
       </div>
-    </section>
+      </section>
+    </>
   );
 };
 
