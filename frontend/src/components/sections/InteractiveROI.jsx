@@ -9,7 +9,22 @@ const InteractiveROI = () => {
   const roi = Math.floor((totalSavings / cost) * 100);
 
   return (
-    <section style={{padding: '6rem 2rem', background: 'linear-gradient(135deg, #fef3c7 0%, #fde68a 100%)'}}>      <div style={{maxWidth: '1200px', margin: '0 auto'}}>
+    <>
+      <Helmet>
+        <title>Calculate LGBTQ+ Safety ROI | ESG Impact Calculator | Vector for Good</title>
+        <meta name="description" content="Discover your enterprise's savings and ESG performance with our LGBTQ+ Safety ROI Calculator. Measure real business impact and compliance results instantly." />
+        <meta property="og:title" content="LGBTQ+ Safety ROI Calculator | ESG Impact Results" />
+        <meta property="og:description" content="See how Vector for Good's calculator quantifies cost savings, workforce impact, and regulatory ROI for LGBTQ+ safety." />
+        <meta property="og:image" content="https://customer-assets.emergentagent.com/job_46189f81-3b3a-4aa4-aac3-2ab4e4427fc1/artifacts/e5ypx4zy_EEF96F90-7D62-411E-92B2-8B4BF5630EF7.PNG" />
+        <meta property="og:url" content="https://vectorforgood.com/#roi-calculator" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="LGBTQ+ Safety ROI Calculator | ESG Impact Results" />
+        <meta name="twitter:description" content="Calculate your company's savings from safer LGBTQ+ workplaces. Real ROI, real impact." />
+        <meta name="twitter:image" content="https://customer-assets.emergentagent.com/job_46189f81-3b3a-4aa4-aac3-2ab4e4427fc1/artifacts/e5ypx4zy_EEF96F90-7D62-411E-92B2-8B4BF5630EF7.PNG" />
+        <link rel="canonical" href="https://vectorforgood.com/#roi-calculator" />
+      </Helmet>
+      <section style={{padding: '6rem 2rem', background: 'linear-gradient(135deg, #fef3c7 0%, #fde68a 100%)'}}>      <div style={{maxWidth: '1200px', margin: '0 auto'}}>
         <h2 style={{fontSize: '2.5rem', fontWeight: '800', textAlign: 'center', marginBottom: '3rem'}}>Calculate Your ROI</h2>
         
         <div style={{background: 'white', padding: '3rem', borderRadius: '20px', boxShadow: '0 20px 40px rgba(0,0,0,0.1)'}}>
