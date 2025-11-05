@@ -79,6 +79,12 @@ const BlogListing = () => {
 
   return (
     <div className="blog-container">
+      <Helmet>
+        <title>LGBTQ+ Safety & ESG Thought Leadership | Vector for Good Blog</title>
+        <meta name="description" content="Expert insights on LGBTQ+ workplace safety, ESG reporting, duty of care, and AI-powered intelligence for Fortune 50 enterprises. Written by KIKI QI." />
+        <meta name="keywords" content="LGBTQ+ workplace safety blog, ESG reporting insights, duty of care articles, Queer Intelligence thought leadership, LGBTQ+ safety trends" />
+      </Helmet>
+      
       {/* Hero Section */}
       <div className="blog-hero">
         <div className="hero-content">
