@@ -26,23 +26,25 @@ import { Toaster } from "./components/ui/sonner";
 
 function App() {
   return (
-    <div className="App">
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<EnterpriseLanding />} />
-          <Route path="/community" element={<CommunityLanding />} />
-          <Route path="/demo" element={<EmployeeDemo />} />
-          <Route path="/investors" element={<InvestorPage />} />
-          <Route path="/corporate-travel/*" element={<CorporateTravel />} />
-          <Route path="/blog" element={<BlogListing />} />
-          <Route path="/blog/:slug" element={<BlogPost />} />
-          <Route path="/privacy/gdpr" element={<PrivacyGDPR />} />
-          <Route path="/privacy/ccpa" element={<PrivacyCCPA />} />
-          <Route path="/faq" element={<FAQPage />} />
-        </Routes>
-      </BrowserRouter>
-      <Toaster position="top-right" />
-    </div>
+    <HelmetProvider>
+      <div className="App">
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<EnterpriseLanding />} />
+            <Route path="/community" element={<CommunityLanding />} />
+            <Route path="/demo" element={<EmployeeDemo />} />
+            <Route path="/investors" element={<InvestorPage />} />
+            <Route path="/corporate-travel/*" element={<CorporateTravel />} />
+            <Route path="/blog" element={<BlogListing />} />
+            <Route path="/blog/:slug" element={<BlogPost />} />
+            <Route path="/privacy/gdpr" element={<PrivacyGDPR />} />
+            <Route path="/privacy/ccpa" element={<PrivacyCCPA />} />
+            <Route path="/faq" element={<FAQPage />} />
+          </Routes>
+        </BrowserRouter>
+        <Toaster position="top-right" />
+      </div>
+    </HelmetProvider>
   );
 }
 
