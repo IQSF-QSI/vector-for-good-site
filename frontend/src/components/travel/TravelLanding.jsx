@@ -297,7 +297,7 @@ const TravelLanding = () => {
                 <ul className="footer-links">
                   <li><Link to="/community">Our Story</Link></li>
                   <li><Link to="/investors">Investors</Link></li>
-                  <li><a href="mailto:levi@vectorforgood.com">Contact</a></li>
+                  <li><a href="mailto:hello@vectorforgood.com">Contact</a></li>
                 </ul>
               </div>
             </div>
