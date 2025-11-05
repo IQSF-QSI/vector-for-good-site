@@ -512,6 +512,7 @@ const EnterpriseLanding = () => {
             <ul className="footer-links">
               <li><Link to="/demo">Live QSI Demo</Link></li>
               <li><Link to="/blog">KIKI's Blog</Link></li>
+              <li><Link to="/faq">FAQ</Link></li>
               <li><a href="#roi" onClick={(e) => { e.preventDefault(); document.getElementById('roi').scrollIntoView({ behavior: 'smooth' }); }}>ROI Calculator</a></li>
               <li><a href="#security" onClick={(e) => { e.preventDefault(); document.getElementById('security').scrollIntoView({ behavior: 'smooth' }); }}>Security & Compliance</a></li>
               <li><a href="#contact" onClick={(e) => { e.preventDefault(); document.getElementById('contact').scrollIntoView({ behavior: 'smooth' }); }}>Request Demo</a></li>
