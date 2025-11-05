@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate, useSearchParams } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import axios from 'axios';
 import '../styles/blog.css';
 
