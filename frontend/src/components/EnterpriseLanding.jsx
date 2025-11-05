@@ -155,7 +155,7 @@ const EnterpriseLanding = () => {
         <div className="hero-visual">
           <img 
             src="https://customer-assets.emergentagent.com/job_46189f81-3b3a-4aa4-aac3-2ab4e4427fc1/artifacts/8fbo6brx_Gemini_Generated_Image_kwud8dkwud8dkwud.png" 
-            alt="Vector for Good Platform" 
+            alt="Vector for Good LGBTQ+ Safety Intelligence Platform Dashboard showing real-time QSI scores, ESG reporting metrics, and duty of care compliance across 195+ countries" 
             className="hero-image"
           />
         </div>
