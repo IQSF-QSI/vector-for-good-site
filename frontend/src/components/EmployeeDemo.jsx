@@ -70,6 +70,12 @@ const EmployeeDemo = () => {
 
   return (
     <div className="employee-demo">
+      <Helmet>
+        <title>Live QSI Demo - LGBTQ+ Safety Intelligence | Vector for Good</title>
+        <meta name="description" content="Try our live Queer Safety Intelligence (QSI) demo. Explore real-time LGBTQ+ safety scores for 195+ countries. See how Fortune 50 enterprises assess workplace safety and duty of care." />
+        <meta name="keywords" content="QSI demo, LGBTQ+ safety scores, live demo, enterprise platform walkthrough, Queer Intelligence demo, workplace safety assessment" />
+      </Helmet>
+      
       {/* Header */}
       <header className="demo-header">
         <div className="demo-header-content">
