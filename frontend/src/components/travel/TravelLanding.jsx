@@ -12,6 +12,20 @@ import {
 const TravelLanding = () => {
   return (
     <div className="travel-landing">
+      <Helmet>
+        <title>Corporate LGBTQ+ Travel Risk Intelligence | Duty of Care Platform | Vector for Good</title>
+        <meta name="description" content="Real-time travel risk intelligence and safety compliance for LGBTQ+ employees in 195+ countries. Protect your workforce and business today." />
+        <meta property="og:title" content="Corporate LGBTQ+ Travel Risk Platform | Vector for Good" />
+        <meta property="og:description" content="Ensure employee well-being with Vector for Good's global travel risk insights, real-time safety checks, and duty of care tools." />
+        <meta property="og:image" content="https://customer-assets.emergentagent.com/job_46189f81-3b3a-4aa4-aac3-2ab4e4427fc1/artifacts/e5ypx4zy_EEF96F90-7D62-411E-92B2-8B4BF5630EF7.PNG" />
+        <meta property="og:url" content="https://vectorforgood.com/corporate-travel" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Corporate LGBTQ+ Travel Risk Platform | Vector for Good" />
+        <meta name="twitter:description" content="Real-time duty of care intelligence for travel and global HR teams. Protect every trip." />
+        <meta name="twitter:image" content="https://customer-assets.emergentagent.com/job_46189f81-3b3a-4aa4-aac3-2ab4e4427fc1/artifacts/e5ypx4zy_EEF96F90-7D62-411E-92B2-8B4BF5630EF7.PNG" />
+        <link rel="canonical" href="https://vectorforgood.com/corporate-travel" />
+      </Helmet>
       {/* Header */}
       <header className="landing-header">
         <div className="landing-header-content">
