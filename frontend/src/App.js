@@ -37,6 +37,7 @@ function App() {
           <Route path="/blog/:slug" element={<BlogPost />} />
           <Route path="/privacy/gdpr" element={<PrivacyGDPR />} />
           <Route path="/privacy/ccpa" element={<PrivacyCCPA />} />
+          <Route path="/faq" element={<FAQPage />} />
         </Routes>
       </BrowserRouter>
       <Toaster position="top-right" />
