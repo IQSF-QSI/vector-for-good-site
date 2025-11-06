@@ -14,7 +14,9 @@ router = APIRouter()
 
 # MongoDB connection
 MONGO_URL = os.getenv("MONGO_URL")
-DB_NAME = os.getenv("DB_NAME", "test_database")
+DB_NAME = os.getenv("DB_NAME")
+if not DB_NAME:
+    raise ValueError("DB_NAME environment variable must be set")
 EMERGENT_LLM_KEY = os.getenv("EMERGENT_LLM_KEY")
 
 client = AsyncIOMotorClient(MONGO_URL)
