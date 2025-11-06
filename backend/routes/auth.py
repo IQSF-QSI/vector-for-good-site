@@ -14,7 +14,9 @@ load_dotenv()
 router = APIRouter()
 
 # Security setup
-SECRET_KEY = os.getenv("SECRET_KEY", "your-secret-key-change-in-production")
+SECRET_KEY = os.getenv("SECRET_KEY")
+if not SECRET_KEY:
+    raise ValueError("SECRET_KEY environment variable must be set for production")
 ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES = 30 * 24 * 60  # 30 days
 
@@ -23,7 +25,9 @@ oauth2_scheme = OAuth2PasswordBearer(tokenUrl="api/auth/login")
 
 # MongoDB connection
 MONGO_URL = os.getenv("MONGO_URL")
-DB_NAME = os.getenv("DB_NAME", "test_database")
+DB_NAME = os.getenv("DB_NAME")
+if not DB_NAME:
+    raise ValueError("DB_NAME environment variable must be set")
 client = AsyncIOMotorClient(MONGO_URL)
 db = client[DB_NAME]
 
