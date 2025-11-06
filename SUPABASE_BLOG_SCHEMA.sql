@@ -185,7 +185,8 @@ If you''re sending LGBTQ+ employees somewhere, you better have done your homewor
   'Travel Safety',
   ARRAY['travel', 'safety', 'corporate', 'lgbtq+'],
   10
-);
+)
+ON CONFLICT (slug) DO NOTHING;
 ```
 
 ## Instructions for Setup
