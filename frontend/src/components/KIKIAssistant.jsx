@@ -5,9 +5,9 @@ import axios from 'axios';
 import Cal, { getCalApi } from "@calcom/embed-react";
 
 const API_URL = process.env.REACT_APP_BACKEND_URL || '';
-const OPENPHONE_API_KEY = '9FxAu3Vtm9VeZgN3UScTByDRZyuMOYWi';
-const OPENPHONE_NUMBER = '+18888888888'; // Replace with actual Quo/OpenPhone number
-const CAL_COM_LINK = 'levi'; // Cal.com username
+const OPENPHONE_API_KEY = process.env.REACT_APP_OPENPHONE_API_KEY || '';
+const OPENPHONE_NUMBER = process.env.REACT_APP_OPENPHONE_NUMBER || '+18888888888';
+const CAL_COM_LINK = process.env.REACT_APP_CAL_COM_LINK || 'levi';
 
 const KIKIAssistant = () => {
   const [isOpen, setIsOpen] = useState(false);
