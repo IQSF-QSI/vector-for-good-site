@@ -3,43 +3,44 @@
 ## SQL to run in Supabase SQL Editor
 
 ```sql
--- Enable UUID extension
-CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
+-- Enable pgcrypto extension for UUID generation
+CREATE EXTENSION IF NOT EXISTS pgcrypto;
 
 -- Create blog_posts table
-CREATE TABLE blog_posts (
-  id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+CREATE TABLE IF NOT EXISTS blog_posts (
+  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
   title TEXT NOT NULL,
   slug TEXT UNIQUE NOT NULL,
   content TEXT NOT NULL,
   excerpt TEXT NOT NULL,
   author TEXT DEFAULT 'KIKI QI',
-  tags TEXT[] DEFAULT '{}',
+  tags TEXT[] DEFAULT ARRAY[]::TEXT[],
   category TEXT NOT NULL,
-  citations TEXT[] DEFAULT '{}',
+  citations TEXT[] DEFAULT ARRAY[]::TEXT[],
   featured_image TEXT,
   published BOOLEAN DEFAULT true,
-  publish_date TIMESTAMPTZ DEFAULT NOW(),
-  created_at TIMESTAMPTZ DEFAULT NOW(),
-  updated_at TIMESTAMPTZ DEFAULT NOW(),
+  publish_date TIMESTAMPTZ DEFAULT CURRENT_TIMESTAMP,
+  created_at TIMESTAMPTZ DEFAULT CURRENT_TIMESTAMP,
+  updated_at TIMESTAMPTZ DEFAULT CURRENT_TIMESTAMP,
   views INTEGER DEFAULT 0,
   sass_level INTEGER DEFAULT 10 CHECK (sass_level >= 1 AND sass_level <= 10)
 );
 
--- Create index on slug for fast lookups
-CREATE INDEX idx_blog_posts_slug ON blog_posts(slug);
-
--- Create index on category for filtering
-CREATE INDEX idx_blog_posts_category ON blog_posts(category);
-
--- Create index on published for filtering
-CREATE INDEX idx_blog_posts_published ON blog_posts(published);
-
--- Create index on publish_date for sorting
-CREATE INDEX idx_blog_posts_publish_date ON blog_posts(publish_date DESC);
+-- Create indexes for performance
+CREATE INDEX IF NOT EXISTS idx_blog_posts_slug ON blog_posts(slug);
+CREATE INDEX IF NOT EXISTS idx_blog_posts_category ON blog_posts(category);
+CREATE INDEX IF NOT EXISTS idx_blog_posts_published ON blog_posts(published);
+CREATE INDEX IF NOT EXISTS idx_blog_posts_publish_date ON blog_posts(publish_date DESC);
 
 -- Enable Row Level Security (RLS)
 ALTER TABLE blog_posts ENABLE ROW LEVEL SECURITY;
+
+-- Drop existing policies if they exist (for re-running script)
+DROP POLICY IF EXISTS "Public can read published posts" ON blog_posts;
+DROP POLICY IF EXISTS "Authenticated users can read all posts" ON blog_posts;
+DROP POLICY IF EXISTS "Authenticated users can insert posts" ON blog_posts;
+DROP POLICY IF EXISTS "Authenticated users can update posts" ON blog_posts;
+DROP POLICY IF EXISTS "Authenticated users can delete posts" ON blog_posts;
 
 -- Policy: Allow public read access to published posts
 CREATE POLICY "Public can read published posts"
@@ -71,14 +72,21 @@ CREATE POLICY "Authenticated users can delete posts"
   FOR DELETE
   USING (auth.role() = 'authenticated');
 
+-- Grant permissions to authenticated users
+GRANT ALL ON blog_posts TO authenticated;
+GRANT SELECT ON blog_posts TO anon;
+
 -- Create function to automatically update updated_at timestamp
 CREATE OR REPLACE FUNCTION update_updated_at_column()
 RETURNS TRIGGER AS $$
 BEGIN
-  NEW.updated_at = NOW();
+  NEW.updated_at = CURRENT_TIMESTAMP;
   RETURN NEW;
 END;
 $$ LANGUAGE plpgsql;
+
+-- Drop existing trigger if it exists
+DROP TRIGGER IF EXISTS update_blog_posts_updated_at ON blog_posts;
 
 -- Create trigger to call the function
 CREATE TRIGGER update_blog_posts_updated_at
